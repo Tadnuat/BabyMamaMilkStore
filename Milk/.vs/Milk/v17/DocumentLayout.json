@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\SWP391\\Milk\\",
+  "WorkspaceRootPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|d:\\swp391\\milk\\milk.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|d:\\swp391\\babymamamilkstore\\milk\\milk.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|d:\\swp391\\milk\\milk.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|D:\\SWP391\\BabyMamaMilkStore\\Milk\\milk.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|d:\\swp391\\milk\\milk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|D:\\SWP391\\BabyMamaMilkStore\\Milk\\milk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|d:\\swp391\\milk\\milkrepo\\milkstore.repo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|D:\\SWP391\\BabyMamaMilkStore\\Milk\\milkrepo\\milkstore.repo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|solutionrelative:milkrepo\\milkstore.repo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|d:\\swp391\\milk\\milk.api\\milkstore.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|D:\\SWP391\\BabyMamaMilkStore\\Milk\\milk.api\\milkstore.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\milkstore.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkRepo.csproj|d:\\swp391\\milk\\milkrepo\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkRepo.csproj|D:\\SWP391\\BabyMamaMilkStore\\Milk\\milkrepo\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkRepo.csproj|solutionrelative:milkrepo\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -40,9 +40,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\SWP391\\Milk\\Milk.API\\Controllers\\WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Milk.API\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\SWP391\\Milk\\Milk.API\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "Milk.API\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -53,66 +53,61 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MilkStore.Repo",
-              "DocumentMoniker": "D:\\SWP391\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
+              "DocumentMoniker": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
               "RelativeDocumentMoniker": "MilkRepo\\MilkStore.Repo.csproj",
-              "ToolTip": "D:\\SWP391\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
+              "ToolTip": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
               "RelativeToolTip": "MilkRepo\\MilkStore.Repo.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-06T15:46:53.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T15:46:53.508Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\SWP391\\Milk\\Milk.API\\appsettings.json",
+              "DocumentMoniker": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\Milk.API\\appsettings.json",
               "RelativeDocumentMoniker": "Milk.API\\appsettings.json",
-              "ToolTip": "D:\\SWP391\\Milk\\Milk.API\\appsettings.json",
+              "ToolTip": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\Milk.API\\appsettings.json",
               "RelativeToolTip": "Milk.API\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-06T15:47:32.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T15:47:32.575Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\SWP391\\Milk\\Milk.API\\Program.cs",
+              "DocumentMoniker": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\Milk.API\\Program.cs",
               "RelativeDocumentMoniker": "Milk.API\\Program.cs",
-              "ToolTip": "D:\\SWP391\\Milk\\Milk.API\\Program.cs",
+              "ToolTip": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\Milk.API\\Program.cs",
               "RelativeToolTip": "Milk.API\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T15:47:02.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T15:47:02.489Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\SWP391\\Milk\\MilkRepo\\Class1.cs",
+              "DocumentMoniker": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\Class1.cs",
               "RelativeDocumentMoniker": "MilkRepo\\Class1.cs",
-              "ToolTip": "D:\\SWP391\\Milk\\MilkRepo\\Class1.cs",
+              "ToolTip": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\Class1.cs",
               "RelativeToolTip": "MilkRepo\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T15:45:26.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T15:45:26.5Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "MilkStore.API.csproj",
-              "DocumentMoniker": "D:\\SWP391\\Milk\\Milk.API\\MilkStore.API.csproj",
+              "DocumentMoniker": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\Milk.API\\MilkStore.API.csproj",
               "RelativeDocumentMoniker": "Milk.API\\MilkStore.API.csproj",
-              "ToolTip": "D:\\SWP391\\Milk\\Milk.API\\MilkStore.API.csproj",
+              "ToolTip": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\Milk.API\\MilkStore.API.csproj",
               "RelativeToolTip": "Milk.API\\MilkStore.API.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-06T15:38:54.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T15:38:54.138Z"
             }
           ]
         }
