@@ -110,7 +110,7 @@ namespace MilkStore.Repo.UnitOfWork
                 return _company;
             }
         }
-        GenericRepository<Country> CountryRepository
+        public GenericRepository<Country> CountryRepository
         {
             get
             {
@@ -121,7 +121,7 @@ namespace MilkStore.Repo.UnitOfWork
                 return _country;
             }
         }
-        GenericRepository<Customer> CustomerRepository
+        public GenericRepository<Customer> CustomerRepository
         {
             get
             {
@@ -132,7 +132,7 @@ namespace MilkStore.Repo.UnitOfWork
                 return _customer;
             }
         }
-        GenericRepository<DeliveryMan> DeliveryManRepository
+        public GenericRepository<DeliveryMan> DeliveryManRepository
         {
             get
             {
@@ -143,7 +143,7 @@ namespace MilkStore.Repo.UnitOfWork
                 return _deliveryMan;
             }
         }
-        GenericRepository<Order> OrderRepository
+        public GenericRepository<Order> OrderRepository
         {
             get
             {
@@ -154,7 +154,7 @@ namespace MilkStore.Repo.UnitOfWork
                 return _order;
             }
         }
-        GenericRepository<OrderDetail> OrderDetailRepository
+        public GenericRepository<OrderDetail> OrderDetailRepository
         {
             get
             {
@@ -165,7 +165,7 @@ namespace MilkStore.Repo.UnitOfWork
                 return _orderDetail;
             }
         }
-        GenericRepository<Payment> PaymentRepository
+        public GenericRepository<Payment> PaymentRepository
         {
             get
             {
@@ -176,7 +176,7 @@ namespace MilkStore.Repo.UnitOfWork
                 return _payment;
             }
         }
-        GenericRepository<Product> ProductRepository
+        public GenericRepository<Product> ProductRepository
         {
             get
             {
@@ -198,7 +198,7 @@ namespace MilkStore.Repo.UnitOfWork
                 return _productItem;
             }
         }
-        GenericRepository<Storage> StorageRepository
+        public GenericRepository<Storage> StorageRepository
         {
             get
             {
