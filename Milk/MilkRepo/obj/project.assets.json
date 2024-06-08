@@ -4073,11 +4073,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SWP391\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
+      "projectUniqueName": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
       "projectName": "MilkStore.Repo",
-      "projectPath": "D:\\SWP391\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
+      "projectPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\SWP391\\Milk\\MilkRepo\\obj\\",
+      "outputPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
