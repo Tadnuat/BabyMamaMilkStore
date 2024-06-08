@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SWP391\\Milk\\Milk.API\\MilkStore.API.csproj": {}
+    "D:\\SWP391\\BabyMamaMilkStore\\Milk1\\Milk.API\\MilkStore.API.csproj": {}
   },
   "projects": {
-    "D:\\SWP391\\Milk\\Milk.API\\MilkStore.API.csproj": {
+    "D:\\SWP391\\BabyMamaMilkStore\\Milk1\\Milk.API\\MilkStore.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SWP391\\Milk\\Milk.API\\MilkStore.API.csproj",
+        "projectUniqueName": "D:\\SWP391\\BabyMamaMilkStore\\Milk1\\Milk.API\\MilkStore.API.csproj",
         "projectName": "MilkStore.API",
-        "projectPath": "D:\\SWP391\\Milk\\Milk.API\\MilkStore.API.csproj",
+        "projectPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk1\\Milk.API\\MilkStore.API.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\SWP391\\Milk\\Milk.API\\obj\\",
+        "outputPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk1\\Milk.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\SWP391\\Milk\\MilkRepo\\MilkStore.Repo.csproj": {
-                "projectPath": "D:\\SWP391\\Milk\\MilkRepo\\MilkStore.Repo.csproj"
+              "D:\\SWP391\\BabyMamaMilkStore\\Milk1\\MilkRepo\\MilkStore.Repo.csproj": {
+                "projectPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk1\\MilkRepo\\MilkStore.Repo.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "D:\\SWP391\\Milk\\MilkRepo\\MilkStore.Repo.csproj": {
+    "D:\\SWP391\\BabyMamaMilkStore\\Milk1\\MilkRepo\\MilkStore.Repo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SWP391\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
+        "projectUniqueName": "D:\\SWP391\\BabyMamaMilkStore\\Milk1\\MilkRepo\\MilkStore.Repo.csproj",
         "projectName": "MilkStore.Repo",
-        "projectPath": "D:\\SWP391\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
+        "projectPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk1\\MilkRepo\\MilkStore.Repo.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\SWP391\\Milk\\MilkRepo\\obj\\",
+        "outputPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk1\\MilkRepo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
