@@ -4510,11 +4510,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SWP391\\Milk\\Milk.API\\MilkStore.API.csproj",
+      "projectUniqueName": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\Milk.API\\MilkStore.API.csproj",
       "projectName": "MilkStore.API",
-      "projectPath": "D:\\SWP391\\Milk\\Milk.API\\MilkStore.API.csproj",
+      "projectPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\Milk.API\\MilkStore.API.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\SWP391\\Milk\\Milk.API\\obj\\",
+      "outputPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\Milk.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4531,8 +4531,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\SWP391\\Milk\\MilkRepo\\MilkStore.Repo.csproj": {
-              "projectPath": "D:\\SWP391\\Milk\\MilkRepo\\MilkStore.Repo.csproj"
+            "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj": {
+              "projectPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj"
             }
           }
         }
