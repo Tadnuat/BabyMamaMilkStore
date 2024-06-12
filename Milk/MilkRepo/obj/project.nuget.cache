@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "LmFSSwGl88o=",
   "success": true,
   "projectFilePath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
+=======
+  "dgSpecHash": "wNzfQdeDbqI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\nh0kb\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\nh0kb\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

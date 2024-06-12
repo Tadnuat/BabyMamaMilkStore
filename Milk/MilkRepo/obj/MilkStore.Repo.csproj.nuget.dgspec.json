@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\Users\\nh0kb\\source\\repos\\SWP\\Milk\\MilkRepo\\MilkStore.Repo.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
         "packagesPath": "C:\\Users\\nh0kb\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\Milk\\MilkRepo\\obj\\",
+=======
+    "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
+        "projectName": "MilkStore.Repo",
+        "projectPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
+        "packagesPath": "C:\\Users\\nh0kb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nh0kb\\AppData\\Roaming\\NuGet\\NuGet.Config",
