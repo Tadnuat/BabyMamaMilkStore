@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\models\\customermodel\\requestcreatecustomermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\models\\customermodel\\requestcreatecustomermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\controllers\\agerangecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milkrepo\\milkstore.repo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|solutionrelative:milkrepo\\milkstore.repo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -74,8 +78,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RequestCreateCustomerModel.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
+              "RelativeDocumentMoniker": "Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
+              "RelativeToolTip": "Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T08:56:48.771Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
@@ -114,20 +131,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Milk.API\\Controllers\\CustomerController.cs",
               "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "Milk.API\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAjAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAYwGMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T08:49:42.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AgeRangeController.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\AgeRangeController.cs",
               "RelativeDocumentMoniker": "Milk.API\\Controllers\\AgeRangeController.cs",
@@ -135,12 +152,11 @@
               "RelativeToolTip": "Milk.API\\Controllers\\AgeRangeController.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAAwBIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T08:46:36.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T08:46:36.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CountryController.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\CountryController.cs",
               "RelativeDocumentMoniker": "Milk.API\\Controllers\\CountryController.cs",
@@ -148,12 +164,11 @@
               "RelativeToolTip": "Milk.API\\Controllers\\CountryController.cs",
               "ViewState": "AQIAAGMAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T08:43:42.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T08:43:42.827Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\UnitOfWork\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "MilkRepo\\UnitOfWork\\UnitOfWork.cs",
@@ -161,12 +176,11 @@
               "RelativeToolTip": "MilkRepo\\UnitOfWork\\UnitOfWork.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAmwNIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T08:56:11.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-08T08:56:11.359Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\Repository\\GenericRepository.cs",
               "RelativeDocumentMoniker": "MilkRepo\\Repository\\GenericRepository.cs",
@@ -178,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "RequestSearchProductItemModel.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\ProductItemModel\\RequestSearchProductItemModel.cs",
               "RelativeDocumentMoniker": "Milk.API\\Models\\ProductItemModel\\RequestSearchProductItemModel.cs",
@@ -190,7 +204,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Program.cs",
+              "RelativeDocumentMoniker": "Milk.API\\Program.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Program.cs",
+              "RelativeToolTip": "Milk.API\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:47:02.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "RequestCreateProductItemModel.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\ProductItemModel\\RequestCreateProductItemModel.cs",
               "RelativeDocumentMoniker": "Milk.API\\Models\\ProductItemModel\\RequestCreateProductItemModel.cs",
@@ -202,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "RequestSearchAdminModel.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\AdminModel\\RequestSearchAdminModel.cs",
               "RelativeDocumentMoniker": "Milk.API\\Models\\AdminModel\\RequestSearchAdminModel.cs",
@@ -214,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "RequestCreateAdminModel.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\AdminModel\\RequestCreateAdminModel.cs",
               "RelativeDocumentMoniker": "Milk.API\\Models\\AdminModel\\RequestCreateAdminModel.cs",
@@ -226,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Milk.API\\Controllers\\AdminController.cs",
@@ -238,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Milk.API\\Controllers\\WeatherForecastController.cs",
@@ -250,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "MilkStore.Repo.csproj",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
               "RelativeDocumentMoniker": "MilkRepo\\MilkStore.Repo.csproj",
@@ -262,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\appsettings.json",
               "RelativeDocumentMoniker": "Milk.API\\appsettings.json",
@@ -274,19 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Program.cs",
-              "RelativeDocumentMoniker": "Milk.API\\Program.cs",
-              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Program.cs",
-              "RelativeToolTip": "Milk.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T15:47:02.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\Class1.cs",
               "RelativeDocumentMoniker": "MilkRepo\\Class1.cs",
@@ -298,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "MilkStore.API.csproj",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\MilkStore.API.csproj",
               "RelativeDocumentMoniker": "Milk.API\\MilkStore.API.csproj",

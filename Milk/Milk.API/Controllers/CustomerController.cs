@@ -77,7 +77,7 @@ namespace MilkStore.API.Controllers
         {
             var customerEntity = new Customer
             {
-                CustomerId = requestCreateCustomerModel.CustomerId,
+               
                 CustomerName = requestCreateCustomerModel.CustomerName,
                 Email = requestCreateCustomerModel.Email,
                 Password = requestCreateCustomerModel.Password

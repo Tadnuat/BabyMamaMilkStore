@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using MilkStore.Repo.Entities;
+using MilkStore.Repo.UnitOfWork;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +11,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// DbContext
+builder.Services.AddDbContext<MilkContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+//  UnitOfWork
+builder.Services.AddScoped<UnitOfWork>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
