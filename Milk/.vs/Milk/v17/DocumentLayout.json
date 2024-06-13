@@ -78,21 +78,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RequestCreateCustomerModel.cs",
-              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
-              "RelativeDocumentMoniker": "Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
-              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
-              "RelativeToolTip": "Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T08:56:48.771Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
@@ -131,6 +118,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RequestCreateCustomerModel.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
+              "RelativeDocumentMoniker": "Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
+              "RelativeToolTip": "Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T08:56:48.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\CustomerController.cs",
@@ -139,8 +139,7 @@
               "RelativeToolTip": "Milk.API\\Controllers\\CustomerController.cs",
               "ViewState": "AQIAADwAAAAAAAAAAAAYwGMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T08:49:42.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T08:49:42.182Z"
             },
             {
               "$type": "Document",
@@ -212,8 +211,7 @@
               "RelativeToolTip": "Milk.API\\Program.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T15:47:02.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T15:47:02.489Z"
             },
             {
               "$type": "Document",
