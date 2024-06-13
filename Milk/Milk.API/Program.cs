@@ -8,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -18,6 +21,11 @@ builder.Services.AddDbContext<MilkContext>(options =>
 
 // Đăng ký UnitOfWork
 builder.Services.AddScoped<UnitOfWork>();
+<<<<<<< Updated upstream
+=======
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+>>>>>>> Stashed changes
 
 var app = builder.Build();
 
@@ -35,3 +43,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+

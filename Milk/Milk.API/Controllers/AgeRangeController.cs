@@ -13,9 +13,9 @@ namespace MilkStore.API.Controllers
     [ApiController]
     public class AgeRangeController : ControllerBase
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly UnitOfWork _unitOfWork;
 
-        public AgeRangeController(IUnitOfWork unitOfWork)
+        public AgeRangeController(UnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
@@ -64,9 +64,10 @@ namespace MilkStore.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public IActionResult GetAgeRangeById(int id)
         {
             var ageRange = _unitOfWork.AgeRangeRepository.GetByID(id);
+            var ageRange1 = _unitOfWork.AgeRangeRepository.GetByID(id);
             if (ageRange == null)
             {
                 return NotFound();
