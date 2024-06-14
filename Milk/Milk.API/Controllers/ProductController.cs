@@ -20,46 +20,12 @@ namespace MilkStore.API.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        /// <summary>
-        /// SortBy (ProductId = 1,ProductName = 2,CategoryId = 3,UnitsInStock = 4,UnitPrice = 5,)
-        /// 
-        /// SortType (Ascending = 1,Descending = 2,)        
-        /// </summary>
-        /// <param name="requestSearchProductModel"></param>
-        /// <returns></returns>
         [HttpGet]
-        public IActionResult SearchProduct([FromQuery] RequestSearchProductModel requestSearchProductModel)
+        public IActionResult GetAll()
         {
-            var sortBy = requestSearchProductModel.SortContent != null ? requestSearchProductModel.SortContent?.sortProductBy.ToString() : null;
-            var sortType = requestSearchProductModel.SortContent != null ? requestSearchProductModel.SortContent?.sortProductType.ToString() : null;
-            Expression<Func<Product, bool>> filter = x =>
-                (string.IsNullOrEmpty(requestSearchProductModel.ProductName) || x.ProductName.Contains(requestSearchProductModel.ProductName)) &&
-                (x.BrandMilkId == requestSearchProductModel.BrandMilkId || requestSearchProductModel.BrandMilkId == null) &&
-                (x.AdminId <= requestSearchProductModel.AdminId || requestSearchProductModel.AdminId == null);
-
-            Func<IQueryable<Product>, IOrderedQueryable<Product>> orderBy = null;
-
-            if (!string.IsNullOrEmpty(sortBy))
-            {
-                if (sortType == SortProductTypeEnum.Ascending.ToString())
-                {
-                    orderBy = query => query.OrderBy(p => EF.Property<object>(p, sortBy));
-                }
-                else if (sortType == SortProductTypeEnum.Descending.ToString())
-                {
-                    orderBy = query => query.OrderByDescending(p => EF.Property<object>(p, sortBy));
-                }
-            }
-            var responseProduct = _unitOfWork.ProductRepository.Get(
-                null,
-                orderBy,
-                includeProperties: "",
-                pageIndex: requestSearchProductModel.pageIndex,
-                pageSize: requestSearchProductModel.pageSize
-            );
+            var responseProduct = _unitOfWork.ProductRepository.Get();
             return Ok(responseProduct);
         }
-
         [HttpGet("{id}")]
         public IActionResult GetProductById(int id)
         {
@@ -71,6 +37,7 @@ namespace MilkStore.API.Controllers
         {
             var product = new Product
             {
+                ProductId = requestCreateProductModel.ProductId,
                 ProductName = requestCreateProductModel.ProductName,
                 BrandMilkId = requestCreateProductModel.BrandMilkId,
                 AdminId = requestCreateProductModel.AdminId           
@@ -81,14 +48,14 @@ namespace MilkStore.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateProduct(int id, RequestCreateProductModel RequestCreateProductModel)
+        public IActionResult UpdateProduct(int id, RequestUpdateProductModel requestUpdateProductModel)
         {
             var existedProduct = _unitOfWork.ProductRepository.GetByID(id);
             if (existedProduct != null)
             {
-                existedProduct.ProductName = RequestCreateProductModel.ProductName;
-                existedProduct.BrandMilkId = RequestCreateProductModel.BrandMilkId;
-                existedProduct.AdminId = RequestCreateProductModel.AdminId;
+                existedProduct.ProductName = requestUpdateProductModel.ProductName;
+                existedProduct.BrandMilkId = requestUpdateProductModel.BrandMilkId;
+                existedProduct.AdminId = requestUpdateProductModel.AdminId;
             }
             _unitOfWork.ProductRepository.Update(existedProduct);
             _unitOfWork.Save();

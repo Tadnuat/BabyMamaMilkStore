@@ -4,19 +4,13 @@ namespace MilkStore.API.Models.ProductItemModel
 {
     public class RequestSearchProductItemModel
     {
-        public int ProductItemId { get; set; }
-
         public string? Benefit { get; set; }
 
         public string? Description { get; set; }
 
-        public string? Image { get; set; }
-
         public string ItemName { get; set; }
 
         public double? Weight { get; set; }
-
-        public int? ProductId { get; set; }
 
         public decimal? FromPrice { get; set; } = decimal.Zero;
         public decimal? ToPrice { get; set; } = null;
@@ -33,11 +27,9 @@ namespace MilkStore.API.Models.ProductItemModel
 
     public enum SortProductItemByEnum
     {
-        ProductItemId = 1,
-        ItemName = 2,
-        Weight = 3,
-        ProductId = 4,
-        Price = 5,
+        ItemName = 1,
+        Weight = 2,
+        Price = 3,
     }
     public enum SortProductItemTypeEnum
     {

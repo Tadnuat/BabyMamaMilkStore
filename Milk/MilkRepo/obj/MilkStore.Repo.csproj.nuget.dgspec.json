@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj": {}
+    "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj": {
+    "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
+        "projectUniqueName": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
         "projectName": "MilkStore.Repo",
-        "projectPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
-        "packagesPath": "C:\\Users\\nh0kb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\obj\\",
+        "projectPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\MilkRepo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nh0kb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

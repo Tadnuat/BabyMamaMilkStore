@@ -31,12 +31,12 @@ namespace MilkStore.API.Controllers
             return Ok(responeStorage);
         }
         [HttpPost]
-        public IActionResult CreateOrderDetail(RequestStorageModel requestStorageModel)
+        public IActionResult CreateOrderDetail(RequestCreateStorageModel requestCreateStorageModel)
         {
             var storage = new Storage
             {
-
-                StorageName = requestStorageModel.StorageName,
+                StorageId = requestCreateStorageModel.StorageId,
+                StorageName = requestCreateStorageModel.StorageName,
             };
             _unitOfWork.StorageRepository.Insert(storage);
             _unitOfWork.Save();
@@ -44,12 +44,12 @@ namespace MilkStore.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateStorage(int id, RequestStorageModel requestStorageModel)
+        public IActionResult UpdateStorage(int id, RequestUpdateStorageModel requestUpdateStorageModel)
         {
             var existedStorage = _unitOfWork.StorageRepository.GetByID(id);
             if (existedStorage != null)
             {
-                existedStorage.StorageName = requestStorageModel.StorageName;
+                existedStorage.StorageName = requestUpdateStorageModel.StorageName;
             }
             _unitOfWork.StorageRepository.Update(existedStorage);
             _unitOfWork.Save();
@@ -59,7 +59,7 @@ namespace MilkStore.API.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteStorage(int id)
         {
-            var existedStorage = _unitOfWork.PaymentRepository.GetByID(id);
+            var existedStorage = _unitOfWork.StorageRepository.GetByID(id);
             _unitOfWork.StorageRepository.Delete(existedStorage);
             _unitOfWork.Save();
             return Ok();

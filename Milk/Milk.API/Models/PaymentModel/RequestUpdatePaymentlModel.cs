@@ -1,6 +1,6 @@
 ﻿namespace MilkStore.API.Models.PaymentModel
 {
-    public class RequestPaymentlModel
+    public class RequestUpdatePaymentlModel
     {
         public decimal Amount { get; set; }
 

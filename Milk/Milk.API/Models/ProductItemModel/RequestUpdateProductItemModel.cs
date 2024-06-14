@@ -1,11 +1,7 @@
-﻿
-
-namespace MilkStore.API.Models.ProductItemModel
+﻿namespace MilkStore.API.Models.ProductItemModel
 {
-    public class RequestCreateProductItemModel
+    public class RequestUpdateProductItemModel
     {
-        public int ProductItemID { get; set; }
-
         public string? Benefit { get; set; }
 
         public string? Description { get; set; }
@@ -19,6 +15,5 @@ namespace MilkStore.API.Models.ProductItemModel
         public double? Weight { get; set; }
 
         public int? ProductId { get; set; }
-
     }
 }
