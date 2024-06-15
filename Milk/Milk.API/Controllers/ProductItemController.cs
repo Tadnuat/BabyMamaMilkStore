@@ -70,8 +70,9 @@ namespace MilkStore.API.Controllers
         [HttpPost]
         public IActionResult CreateProductItem(RequestCreateProductItemModel requestCreateProductItemModel)
         {
-            var productEntity = new ProductItem
+            var productItem = new ProductItem
             {
+                ProductItemId = requestCreateProductItemModel.ProductItemID,
                 ProductId = requestCreateProductItemModel.ProductId,
                 ItemName = requestCreateProductItemModel.ItemName,
                 Price = requestCreateProductItemModel.Price,
@@ -80,35 +81,35 @@ namespace MilkStore.API.Controllers
                 Image = requestCreateProductItemModel.Image,
                 Weight = requestCreateProductItemModel.Weight
             };
-            _unitOfWork.ProductItemRepository.Insert(productEntity);
+            _unitOfWork.ProductItemRepository.Insert(productItem);
             _unitOfWork.Save();
             return Ok();
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateProductItem(int id, RequestCreateProductItemModel RequestCreateProductItemModel)
+        public IActionResult UpdateProductItem(int id, RequestUpdateProductItemModel requestUpdateProductItemModel)
         {
-            var existedProductEntity = _unitOfWork.ProductItemRepository.GetByID(id);
-            if (existedProductEntity != null)
+            var existedProductItem = _unitOfWork.ProductItemRepository.GetByID(id);
+            if (existedProductItem != null)
             {
-                existedProductEntity.ProductId = RequestCreateProductItemModel.ProductId;
-                existedProductEntity.ItemName = RequestCreateProductItemModel.ItemName;
-                existedProductEntity.Price = RequestCreateProductItemModel.Price;
-                existedProductEntity.Benefit = RequestCreateProductItemModel.Benefit;
-                existedProductEntity.Description = RequestCreateProductItemModel.Description;
-                existedProductEntity.Image = RequestCreateProductItemModel.Image;
-                existedProductEntity.Weight = RequestCreateProductItemModel.Weight;
+                existedProductItem.ProductId = requestUpdateProductItemModel.ProductId;
+                existedProductItem.ItemName = requestUpdateProductItemModel.ItemName;
+                existedProductItem.Price = requestUpdateProductItemModel.Price;
+                existedProductItem.Benefit = requestUpdateProductItemModel.Benefit;
+                existedProductItem.Description = requestUpdateProductItemModel.Description;
+                existedProductItem.Image = requestUpdateProductItemModel.Image;
+                existedProductItem.Weight = requestUpdateProductItemModel.Weight;
             }
-            _unitOfWork.ProductItemRepository.Update(existedProductEntity);
+            _unitOfWork.ProductItemRepository.Update(existedProductItem);
             _unitOfWork.Save();
             return Ok();
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteAdmin(int id)
+        public IActionResult DeleteProductItem(int id)
         {
-            var existedCategoryEntity = _unitOfWork.ProductItemRepository.GetByID(id);
-            _unitOfWork.ProductItemRepository.Delete(existedCategoryEntity);
+            var existedProductItem = _unitOfWork.ProductItemRepository.GetByID(id);
+            _unitOfWork.ProductItemRepository.Delete(existedProductItem);
             _unitOfWork.Save();
             return Ok();
         }

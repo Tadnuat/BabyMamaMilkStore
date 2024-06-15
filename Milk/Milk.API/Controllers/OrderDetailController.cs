@@ -30,15 +30,16 @@ namespace MilkStore.API.Controllers
             return Ok(responeOrderDetails);
         }
         [HttpPost]
-        public IActionResult CreateOrderDetail(RequestOrderDetailModel requestOrderDetailModel)
+        public IActionResult CreateOrderDetail(RequestCreateOrderDetailModel requestCreateOrderDetailModel)
         {
             var orderDetail = new OrderDetail
             {
-                OrderId = requestOrderDetailModel.OrderId,
-                ProductItemId = requestOrderDetailModel.ProductItemId,
-                Quantity = requestOrderDetailModel.Quantity,
-                Price = requestOrderDetailModel.Price,
-                OrderDetailStatus = requestOrderDetailModel.OrderDetailStatus,
+                OrderDetailId = requestCreateOrderDetailModel.OrderDetailID,
+                OrderId = requestCreateOrderDetailModel.OrderId,
+                ProductItemId = requestCreateOrderDetailModel.ProductItemId,
+                Quantity = requestCreateOrderDetailModel.Quantity,
+                Price = requestCreateOrderDetailModel.Price,
+                OrderDetailStatus = requestCreateOrderDetailModel.OrderDetailStatus,
             };
             _unitOfWork.OrderDetailRepository.Insert(orderDetail);
             _unitOfWork.Save();
@@ -46,16 +47,16 @@ namespace MilkStore.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateOrderDetail(int id, RequestOrderDetailModel requestOrderDetailModel)
+        public IActionResult UpdateOrderDetail(int id, RequestUpdateOrderDetailModel requestUpdateOrderDetailModel)
         {
             var existedOrderDetail = _unitOfWork.OrderDetailRepository.GetByID(id);
             if (existedOrderDetail != null)
             {
-                existedOrderDetail.OrderId = requestOrderDetailModel.OrderId;
-                existedOrderDetail.ProductItemId = requestOrderDetailModel.ProductItemId;
-                existedOrderDetail.Quantity = requestOrderDetailModel.Quantity;
-                existedOrderDetail.Price = requestOrderDetailModel.Price;
-                existedOrderDetail.OrderDetailStatus = requestOrderDetailModel.OrderDetailStatus;
+                existedOrderDetail.OrderId = requestUpdateOrderDetailModel.OrderId;
+                existedOrderDetail.ProductItemId = requestUpdateOrderDetailModel.ProductItemId;
+                existedOrderDetail.Quantity = requestUpdateOrderDetailModel.Quantity;
+                existedOrderDetail.Price = requestUpdateOrderDetailModel.Price;
+                existedOrderDetail.OrderDetailStatus = requestUpdateOrderDetailModel.OrderDetailStatus;
             }
             _unitOfWork.OrderDetailRepository.Update(existedOrderDetail);
             _unitOfWork.Save();

@@ -30,14 +30,14 @@ namespace MilkStore.API.Controllers
             return Ok(responePayments);
         }
         [HttpPost]
-        public IActionResult CreatePayment(RequestPaymentlModel requestPaymentlModel)
+        public IActionResult CreatePayment(RequestCreatePaymentlModel requestCreatePaymentlModel)
         {
             var payment = new Payment
             {
-                
-                Amount = requestPaymentlModel.Amount,
-                PaymentMethod = requestPaymentlModel.PaymentMethod,
-                OrderId = requestPaymentlModel.OrderId
+                PaymentId = requestCreatePaymentlModel.PaymentId,
+                Amount = requestCreatePaymentlModel.Amount,
+                PaymentMethod = requestCreatePaymentlModel.PaymentMethod,
+                OrderId = requestCreatePaymentlModel.OrderId
             };
             _unitOfWork.PaymentRepository.Insert(payment);
             _unitOfWork.Save();
@@ -45,14 +45,14 @@ namespace MilkStore.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdatePayment(int id, RequestPaymentlModel requestPaymentlModel)
+        public IActionResult UpdatePayment(int id, RequestUpdatePaymentlModel requestUpdatePaymentlModel)
         {
             var existedPayment = _unitOfWork.PaymentRepository.GetByID(id);
             if (existedPayment != null)
             {
-                existedPayment.Amount = requestPaymentlModel.Amount;
-                existedPayment.PaymentMethod = requestPaymentlModel.PaymentMethod;
-                existedPayment.OrderId = requestPaymentlModel.OrderId;
+                existedPayment.Amount = requestUpdatePaymentlModel.Amount;
+                existedPayment.PaymentMethod = requestUpdatePaymentlModel.PaymentMethod;
+                existedPayment.OrderId = requestUpdatePaymentlModel.OrderId;
             }
             _unitOfWork.PaymentRepository.Update(existedPayment);
             _unitOfWork.Save();
