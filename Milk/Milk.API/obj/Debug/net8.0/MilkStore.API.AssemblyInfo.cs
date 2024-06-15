@@ -16,12 +16,16 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec7570405aef3401dad96f4ef046c6f149d33057")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08f70a13c50324c1a5b59374ff8df001ab42aee6")]
 >>>>>>> Stashed changes
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1952befb07ea6fd3e3166c1db87638da21aefb2")]
+>>>>>>> Stashed changes
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18adf1e04c6210f14a3cd0488d0cfe07eb530846")]
 >>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("MilkStore.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MilkStore.API")]

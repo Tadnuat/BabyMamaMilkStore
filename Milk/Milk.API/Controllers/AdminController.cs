@@ -21,15 +21,16 @@ namespace MilkStore.API.Controllers
         /// <summary>
         /// SortBy (AdminId = 1, Username = 2, ...)
         /// 
-        /// SortType (Ascending = 1,Descending = 2)        
+        /// SortType (Ascending = 0,Descending = 1)        
         /// </summary>
         /// <param name="requestSearchAdminModel"></param>
         /// <returns></returns>
+        /// 
         [HttpGet("SearchAdmin")]
         public IActionResult SearchAdmin([FromQuery] RequestSearchAdminModel requestSearchAdminModel)
         {
             var sortBy = requestSearchAdminModel.SortContent?.sortAdminBy;
-            var sortType = requestSearchAdminModel.SortContent?.sortAdminType.ToString();
+            var sortType = requestSearchAdminModel.SortContent?.sortAdminType;
 
             Expression<Func<Admin, bool>> filter = x =>
                 (string.IsNullOrEmpty(requestSearchAdminModel.Username) || x.Username.Contains(requestSearchAdminModel.Username)) &&
@@ -39,11 +40,11 @@ namespace MilkStore.API.Controllers
 
             if (!string.IsNullOrEmpty(sortBy))
             {
-                if (sortType == SortAdminTypeEnum.Ascending.ToString())
+                if (sortType == SortAdminTypeEnum.Ascending)
                 {
                     orderBy = query => query.OrderBy(p => EF.Property<object>(p, sortBy));
                 }
-                else if (sortType == SortAdminTypeEnum.Descending.ToString())
+                else if (sortType == SortAdminTypeEnum.Descending)
                 {
                     orderBy = query => query.OrderByDescending(p => EF.Property<object>(p, sortBy));
                 }

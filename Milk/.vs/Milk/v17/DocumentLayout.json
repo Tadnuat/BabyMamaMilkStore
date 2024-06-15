@@ -5,15 +5,33 @@
   "Documents": [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\milk\\milk.api\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 =======
       "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\controllers\\agerangecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\controllers\\agerangecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\models\\adminmodel\\requestsearchadminmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\models\\adminmodel\\requestsearchadminmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milkrepo\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|solutionrelative:milkrepo\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< Updated upstream
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milkrepo\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -24,6 +42,38 @@
       "RelativeMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|solutionrelative:milkrepo\\entities\\milkcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milkrepo\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|solutionrelative:milkrepo\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\controllers\\brandmilkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\controllers\\brandmilkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\controllers\\agerangecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\controllers\\agerangecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\models\\customermodel\\requestcreatecustomermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\models\\customermodel\\requestcreatecustomermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milkrepo\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|solutionrelative:milkrepo\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -32,22 +82,30 @@
       "RelativeMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|solutionrelative:milkrepo\\entities\\agerange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\models\\agerangemodel\\requestsearchagerangemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\models\\agerangemodel\\requestsearchagerangemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\models\\productitemmodel\\requestcreateproductitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\models\\productitemmodel\\requestcreateproductitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\controllers\\brandmilkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\controllers\\brandmilkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milkrepo\\entities\\brandmilk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8CC8856-7FA2-4234-965C-138ABEFC5539}|MilkRepo\\MilkStore.Repo.csproj|solutionrelative:milkrepo\\entities\\brandmilk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp\\babymamamilkstore\\milk\\milk.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4FB038E-0DA3-4F32-B8D9-627498AD6FEC}|Milk.API\\MilkStore.API.csproj|solutionrelative:milk.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -175,6 +233,7 @@
         {
           "DockedWidth": 200,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "SelectedChildIndex": 2,
           "Children": [
             {
@@ -219,6 +278,9 @@
             {
 =======
           "SelectedChildIndex": 9,
+=======
+          "SelectedChildIndex": 14,
+>>>>>>> Stashed changes
           "Children": [
             {
 >>>>>>> Stashed changes
@@ -261,6 +323,7 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 0,
               "Title": "CompanyController.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\Milk\\Milk.API\\Controllers\\CompanyController.cs",
@@ -296,11 +359,15 @@
               "EditorCaption": ""
 =======
               "DocumentIndex": 0,
+=======
+              "DocumentIndex": 7,
+>>>>>>> Stashed changes
               "Title": "AgeRangeController.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\AgeRangeController.cs",
               "RelativeDocumentMoniker": "Milk.API\\Controllers\\AgeRangeController.cs",
               "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\AgeRangeController.cs",
               "RelativeToolTip": "Milk.API\\Controllers\\AgeRangeController.cs",
+<<<<<<< Updated upstream
               "ViewState": "AQIAACoAAAAAAAAAAAAYwEYAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T06:43:46.336Z",
@@ -341,10 +408,28 @@
               "ViewState": "AQIAAAsAAAAAAAAAAAAswAUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T06:38:29.753Z"
+=======
+              "ViewState": "AQIAAGIAAAAAAAAAAAAswGwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T08:46:36.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CountryController.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\CountryController.cs",
+              "RelativeDocumentMoniker": "Milk.API\\Controllers\\CountryController.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\CountryController.cs",
+              "RelativeToolTip": "Milk.API\\Controllers\\CountryController.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T08:43:42.827Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< Updated upstream
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\UnitOfWork\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "MilkRepo\\UnitOfWork\\IUnitOfWork.cs",
@@ -353,11 +438,22 @@
               "ViewState": "AQIAAAMAAAAAAAAAAAAawBEAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T06:31:18.293Z",
+=======
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Milk.API\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Milk.API\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAcwHgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:59:19.215Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< Updated upstream
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\UnitOfWork\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "MilkRepo\\UnitOfWork\\UnitOfWork.cs",
@@ -396,18 +492,28 @@
               "EditorCaption": ""
 =======
               "DocumentIndex": 7,
+=======
+>>>>>>> Stashed changes
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Program.cs",
               "RelativeDocumentMoniker": "Milk.API\\Program.cs",
               "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Program.cs",
               "RelativeToolTip": "Milk.API\\Program.cs",
+<<<<<<< Updated upstream
               "ViewState": "AQIAABIAAAAAAAAAAADwvxUAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T15:47:02.489Z"
+=======
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:47:02.489Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+<<<<<<< Updated upstream
               "Title": "BrandMilkController.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\BrandMilkController.cs",
               "RelativeDocumentMoniker": "Milk.API\\Controllers\\BrandMilkController.cs",
@@ -432,11 +538,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
+=======
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "Milk.API\\Controllers\\CompanyController.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "Milk.API\\Controllers\\CompanyController.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T06:54:08.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+>>>>>>> Stashed changes
               "Title": "RequestSearchAdminModel.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\AdminModel\\RequestSearchAdminModel.cs",
               "RelativeDocumentMoniker": "Milk.API\\Models\\AdminModel\\RequestSearchAdminModel.cs",
               "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\AdminModel\\RequestSearchAdminModel.cs",
               "RelativeToolTip": "Milk.API\\Models\\AdminModel\\RequestSearchAdminModel.cs",
+<<<<<<< Updated upstream
               "ViewState": "AQIAAAgAAAAAAAAAAAA5wBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T15:59:31.104Z"
@@ -468,6 +589,29 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
+=======
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:59:31.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Milk.API\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\WeatherForecast.cs",
+              "RelativeToolTip": "Milk.API\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T08:09:03.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+>>>>>>> Stashed changes
               "Title": "RequestCreateCustomerModel.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
               "RelativeDocumentMoniker": "Milk.API\\Models\\CustomerModel\\RequestCreateCustomerModel.cs",
@@ -479,7 +623,71 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 16,
+=======
+              "DocumentIndex": 4,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "MilkRepo\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "MilkRepo\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAuwBMAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T05:20:48.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "MilkRepo\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "MilkRepo\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T08:56:11.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BrandMilkController.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\BrandMilkController.cs",
+              "RelativeDocumentMoniker": "Milk.API\\Controllers\\BrandMilkController.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\BrandMilkController.cs",
+              "RelativeToolTip": "Milk.API\\Controllers\\BrandMilkController.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAowEYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T06:53:52.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Milk.API\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Milk.API\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAYwGMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T08:49:42.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\Repository\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "MilkRepo\\Repository\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\Repository\\GenericRepository.cs",
+              "RelativeToolTip": "MilkRepo\\Repository\\GenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T08:56:10.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+>>>>>>> Stashed changes
               "Title": "RequestSearchProductItemModel.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\ProductItemModel\\RequestSearchProductItemModel.cs",
               "RelativeDocumentMoniker": "Milk.API\\Models\\ProductItemModel\\RequestSearchProductItemModel.cs",
@@ -492,6 +700,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 2,
 <<<<<<< Updated upstream
@@ -577,13 +786,37 @@
               "RelativeDocumentMoniker": "Milk.API\\Models\\ProductItemModel\\RequestCreateProductItemModel.cs",
               "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\ProductItemModel\\RequestCreateProductItemModel.cs",
               "RelativeToolTip": "Milk.API\\Models\\ProductItemModel\\RequestCreateProductItemModel.cs",
+=======
+              "DocumentIndex": 14,
+              "Title": "RequestCreateProductItemModel.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\ProductItemModel\\RequestCreateProductItemModel.cs",
+              "RelativeDocumentMoniker": "Milk.API\\Models\\ProductItemModel\\RequestCreateProductItemModel.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\ProductItemModel\\RequestCreateProductItemModel.cs",
+              "RelativeToolTip": "Milk.API\\Models\\ProductItemModel\\RequestCreateProductItemModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T15:59:32.511Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RequestCreateAdminModel.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\AdminModel\\RequestCreateAdminModel.cs",
+              "RelativeDocumentMoniker": "Milk.API\\Models\\AdminModel\\RequestCreateAdminModel.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Models\\AdminModel\\RequestCreateAdminModel.cs",
+              "RelativeToolTip": "Milk.API\\Models\\AdminModel\\RequestCreateAdminModel.cs",
+>>>>>>> Stashed changes
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:59:32.511Z"
+            },
+            {
+              "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 11,
+=======
+              "DocumentIndex": 16,
+>>>>>>> Stashed changes
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Milk.API\\Controllers\\WeatherForecastController.cs",
@@ -596,6 +829,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 6,
               "Title": "MilkStore.Repo.csproj",
@@ -631,6 +865,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
 >>>>>>> Stashed changes
+=======
+              "DocumentIndex": 18,
+>>>>>>> Stashed changes
               "Title": "MilkStore.Repo.csproj",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\MilkStore.Repo.csproj",
               "RelativeDocumentMoniker": "MilkRepo\\MilkStore.Repo.csproj",
@@ -645,9 +882,13 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
 =======
               "DocumentIndex": 18,
+>>>>>>> Stashed changes
+=======
+              "DocumentIndex": 17,
 >>>>>>> Stashed changes
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\Milk\\Milk.API\\appsettings.json",
@@ -660,6 +901,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 5,
               "Title": "Program.cs",
@@ -683,6 +925,9 @@
 =======
               "DocumentIndex": 21,
 >>>>>>> Stashed changes
+=======
+              "DocumentIndex": 20,
+>>>>>>> Stashed changes
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\MilkRepo\\Class1.cs",
               "RelativeDocumentMoniker": "MilkRepo\\Class1.cs",
@@ -697,6 +942,7 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 7,
               "Title": "MilkStore.API.csproj",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\Milk\\Milk.API\\MilkStore.API.csproj",
@@ -706,6 +952,9 @@
               "DocumentIndex": 13,
 =======
               "DocumentIndex": 20,
+>>>>>>> Stashed changes
+=======
+              "DocumentIndex": 19,
 >>>>>>> Stashed changes
               "Title": "MilkStore.API.csproj",
               "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\MilkStore.API.csproj",
