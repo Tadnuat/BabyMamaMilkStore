@@ -1,38 +1,67 @@
--- Insert into Country
-INSERT INTO Country (CountryName) VALUES ('USA'), ('Vietnam'), ('France'), ('Germany'), ('Japan');
+USE Milk;
+GO
 
--- Insert into Company
-INSERT INTO Company (CompanyName, CountryID) VALUES ('Company1', 1), ('Company2', 2), ('Company3', 3), ('Company4', 4), ('Company5', 5);
+-- Insert sample data into Country
+INSERT INTO Country (CountryID, CountryName) VALUES
+(1, 'USA'),
+(2, 'France'),
+(3, 'Japan');
 
--- Insert into BrandMilk
-INSERT INTO BrandMilk (BrandName, CompanyID) VALUES ('Brand1', 1), ('Brand2', 2), ('Brand3', 3), ('Brand4', 4), ('Brand5', 5);
+-- Insert sample data into Company
+INSERT INTO Company (CompanyID, CompanyName, CountryID) VALUES
+(1, 'Dairy Farmers', 1),
+(2, 'Lactalis', 2),
+(3, 'Meiji', 3);
 
--- Insert into Admin
-INSERT INTO Admin (Username, Password) VALUES ('admin1', 'password1'), ('admin2', 'password2'), ('admin3', 'password3');
+-- Insert sample data into BrandMilk
+INSERT INTO BrandMilk (BrandMilkID, BrandName, CompanyID) VALUES
+(1, 'Milk Brand A', 1),
+(2, 'Milk Brand B', 2),
+(3, 'Milk Brand C', 3);
 
--- Insert into Customer
-INSERT INTO Customer (CustomerName, Email, Password) VALUES ('customer1', 'customer1@example.com', 'customer1pass'), ('customer2', 'customer2@example.com', 'customer2pass');
+-- Insert sample data into Admin
+INSERT INTO Admin (AdminID, Username, Password) VALUES
+(1, 'admin1', 'password1'),
+(2, 'admin2', 'password2');
 
--- Insert into Storage
-INSERT INTO Storage (StorageName) VALUES ('Storage1'), ('Storage2'), ('Storage3');
+-- Insert sample data into Customer
+INSERT INTO Customer (CustomerID, CustomerName, Email, Password, Phone) VALUES
+(1, 'John Doe', 'john@example.com', 'password123', 1234567890),
+(2, 'Jane Smith', 'jane@example.com', 'password456', 2345678901);
 
--- Insert into DeliveryMan
-INSERT INTO DeliveryMan (DeliveryName, DeliveryStatus, PhoneNumber, StorageID) VALUES ('DeliveryMan1', 'Active', '1234567890', 1), ('DeliveryMan2', 'Inactive', '0987654321', 2);
+-- Insert sample data into Storage
+INSERT INTO Storage (StorageID, StorageName) VALUES
+(1, 'Main Storage'),
+(2, 'Secondary Storage');
 
--- Insert into Product
-INSERT INTO Product (ProductName, BrandMilkID, AdminID) VALUES ('Product1', 1, 1), ('Product2', 2, 2), ('Product3', 3, 3);
+-- Insert sample data into DeliveryMan
+INSERT INTO DeliveryMan (DeliveryManID, DeliveryName, DeliveryStatus, PhoneNumber, StorageID) VALUES
+(1, 'Mike Johnson', 'Available', '3456789012', 1),
+(2, 'Tom Hanks', 'On Duty', '4567890123', 2);
 
--- Insert into AgeRange
-INSERT INTO AgeRange (Baby, Mama, ProductID) VALUES ('0-6 months', '6-12 months', 1), ('0-6 months', '12-24 months', 2);
+-- Insert sample data into ProductItem
+INSERT INTO ProductItem (ProductItemID, Benefit, Description, Image, ItemName, Price, Weight, BrandMilkID, Baby, Mama, BrandName, CountryName, CompanyName) VALUES
+(1, 'Rich in calcium', 'A high-quality milk product', 'image1.jpg', 'Milk A', 2.50, 1.0, 1, 'Yes', 'No', 'Milk Brand A', 'USA', 'Dairy Farmers'),
+(2, 'Vitamin D enriched', 'Tasty and healthy', 'image2.jpg', 'Milk B', 3.00, 1.0, 2, 'No', 'Yes', 'Milk Brand B', 'France', 'Lactalis'),
+(3, 'Organic', 'Best for babies', 'image3.jpg', 'Milk C', 4.00, 1.0, 3, 'Yes', 'Yes', 'Milk Brand C', 'Japan', 'Meiji');
 
--- Insert into ProductItem
-INSERT INTO ProductItem (Benefit, Description, Image, ItemName, Price, Weight, ProductID) VALUES ('Benefit1', 'Description1', 'image1.jpg', 'Item1', 10.00, 1.5, 1), ('Benefit2', 'Description2', 'image2.jpg', 'Item2', 15.00, 2.0, 2);
+-- Insert sample data into AgeRange
+INSERT INTO AgeRange (AgeRangeID, Baby, Mama, ProductItemID) VALUES
+(1, 'Yes', 'No', 1),
+(2, 'No', 'Yes', 2),
+(3, 'Yes', 'Yes', 3);
 
--- Insert into [Order]
-INSERT INTO [Order] (AdminID, CustomerID, DeliveryManID, OrderDate, ShippingAddress, TotalAmount, StorageID) VALUES (1, 1, 1, '2024-06-14', 'Address1', 100.00, 1), (2, 2, 2, '2024-06-14', 'Address2', 200.00, 2);
+-- Insert sample data into [Order]
+INSERT INTO [Order] (OrderID, CustomerID, DeliveryManID, OrderDate, ShippingAddress, TotalAmount, StorageID) VALUES
+(1, 1, 1, '2024-01-15', '123 Main St', 5.00, 1),
+(2, 2, 2, '2024-01-16', '456 Oak St', 7.00, 2);
 
--- Insert into Payment
-INSERT INTO Payment (Amount, PaymentMethod, OrderID) VALUES (100.00, 'Credit Card', 1), (200.00, 'PayPal', 2);
+-- Insert sample data into Payment
+INSERT INTO Payment (PaymentID, Amount, PaymentMethod, OrderID) VALUES
+(1, 5.00, 'Credit Card', 1),
+(2, 7.00, 'PayPal', 2);
 
--- Insert into OrderDetail
-INSERT INTO OrderDetail (OrderID, ProductItemID, Quantity, Price, OrderDetailStatus) VALUES (1, 1, 2, 20.00, 'Shipped'), (2, 2, 3, 30.00, 'Processing');
+-- Insert sample data into OrderDetail
+INSERT INTO OrderDetail (OrderDetailID, OrderID, ProductItemID, Quantity, Price) VALUES
+(1, 1, 1, 2, 2.50),
+(2, 2, 2, 2, 3.00);

@@ -1,0 +1,14 @@
+D:\SWP391\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.csproj.AssemblyReference.cache
+D:\SWP391\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.GeneratedMSBuildEditorConfig.editorconfig
+D:\SWP391\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.AssemblyInfoInputs.cache
+D:\SWP391\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.AssemblyInfo.cs
+D:\SWP391\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.csproj.CoreCompileInputs.cache
+D:\SWP391\MilkStore\MilkStore.Repository\bin\Debug\net8.0\MilkStore.Repo.deps.json
+D:\SWP391\MilkStore\MilkStore.Repository\bin\Debug\net8.0\MilkStore.Repo.runtimeconfig.json
+D:\SWP391\MilkStore\MilkStore.Repository\bin\Debug\net8.0\MilkStore.Repo.dll
+D:\SWP391\MilkStore\MilkStore.Repository\bin\Debug\net8.0\MilkStore.Repo.pdb
+D:\SWP391\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.dll
+D:\SWP391\MilkStore\MilkStore.Repository\obj\Debug\net8.0\refint\MilkStore.Repo.dll
+D:\SWP391\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.pdb
+D:\SWP391\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.genruntimeconfig.cache
+D:\SWP391\MilkStore\MilkStore.Repository\obj\Debug\net8.0\ref\MilkStore.Repo.dll
