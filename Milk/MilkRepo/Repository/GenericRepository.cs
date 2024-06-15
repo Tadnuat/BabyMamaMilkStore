@@ -59,6 +59,44 @@ namespace MilkStore.Repo.Repository
             return query.ToList();
         }
 
+        // New Search method
+        public virtual IEnumerable<TEntity> Search(
+            Expression<Func<TEntity, bool>> searchExpression,
+            string includeProperties = "",
+            Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
+            int? pageIndex = null,
+            int? pageSize = null)
+        {
+            IQueryable<TEntity> query = dbSet;
+
+            if (searchExpression != null)
+            {
+                query = query.Where(searchExpression);
+            }
+
+            foreach (var includeProperty in includeProperties.Split
+                (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            {
+                query = query.Include(includeProperty);
+            }
+
+            if (orderBy != null)
+            {
+                query = orderBy(query);
+            }
+
+            // Implementing pagination
+            if (pageIndex.HasValue && pageSize.HasValue)
+            {
+                int validPageIndex = pageIndex.Value > 0 ? pageIndex.Value - 1 : 0;
+                int validPageSize = pageSize.Value > 0 ? pageSize.Value : 10;
+
+                query = query.Skip(validPageIndex * validPageSize).Take(validPageSize);
+            }
+
+            return query.ToList();
+        }
+
         public virtual TEntity GetByID(int id)
         {
             return dbSet.Find(id);
@@ -100,6 +138,5 @@ namespace MilkStore.Repo.Repository
             }
             return query.Count();
         }
-
     }
 }

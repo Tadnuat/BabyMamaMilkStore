@@ -5,8 +5,6 @@ using MilkStore.Repo.Entities;
 using MilkStore.Repo.UnitOfWork;
 using System.Linq.Expressions;
 
-using static System.Net.Mime.MediaTypeNames;
-
 namespace MilkStore.API.Controllers
 {
     [Route("api/productitems")]
@@ -20,44 +18,34 @@ namespace MilkStore.API.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        /// <summary>
-        /// SortBy (ProductId = 1,ProductName = 2,CategoryId = 3,UnitsInStock = 4,UnitPrice = 5,)
-        /// 
-        /// SortType (Ascending = 1,Descending = 2,)        
-        /// </summary>
-        /// <param name="requestSearchProductItemModel"></param>
-        /// <returns></returns>
         [HttpGet]
         public IActionResult SearchProductItem([FromQuery] RequestSearchProductItemModel requestSearchProductItemModel)
         {
-            var sortBy = requestSearchProductItemModel.SortContent != null ? requestSearchProductItemModel.SortContent?.sortProductItemBy.ToString() : null;
-            var sortType = requestSearchProductItemModel.SortContent != null ? requestSearchProductItemModel.SortContent?.sortProductItemBy.ToString() : null;
             Expression<Func<ProductItem, bool>> filter = x =>
                 (string.IsNullOrEmpty(requestSearchProductItemModel.ItemName) || x.ItemName.Contains(requestSearchProductItemModel.ItemName)) &&
-                (x.Weight == requestSearchProductItemModel.Weight || requestSearchProductItemModel.Weight == null) &&
                 x.Price >= requestSearchProductItemModel.FromPrice &&
                 (x.Price <= requestSearchProductItemModel.ToPrice || requestSearchProductItemModel.ToPrice == null);
 
-            Func<IQueryable<ProductItem>, IOrderedQueryable<ProductItem>> orderBy = null;
+            Func<IQueryable<ProductItem>, IOrderedQueryable<ProductItem>> orderBy = query => query.OrderBy(p => p.Price);
 
-            if (!string.IsNullOrEmpty(sortBy))
+            if (requestSearchProductItemModel.SortContent != null)
             {
-                if (sortType == SortProductItemTypeEnum.Ascending.ToString())
+                var sortType = requestSearchProductItemModel.SortContent.SortProductItemType;
+
+                if (sortType == SortProductItemTypeEnum.Descending)
                 {
-                    orderBy = query => query.OrderBy(p => EF.Property<object>(p, sortBy));
-                }
-                else if (sortType == SortProductItemTypeEnum.Descending.ToString())
-                {
-                    orderBy = query => query.OrderByDescending(p => EF.Property<object>(p, sortBy));
+                    orderBy = query => query.OrderByDescending(p => p.Price);
                 }
             }
-            var responseProductItem = _unitOfWork.ProductItemRepository.Get(
-                null,
-                orderBy,
+
+            var responseProductItem = _unitOfWork.ProductItemRepository.Search(
+                searchExpression: filter,
                 includeProperties: "",
-                pageIndex: requestSearchProductItemModel.pageIndex,
-                pageSize: requestSearchProductItemModel.pageSize
+                orderBy: orderBy,
+                pageIndex: requestSearchProductItemModel.PageIndex,
+                pageSize: requestSearchProductItemModel.PageSize
             );
+
             return Ok(responseProductItem);
         }
 
@@ -67,6 +55,7 @@ namespace MilkStore.API.Controllers
             var responseProductItem = _unitOfWork.ProductItemRepository.GetByID(id);
             return Ok(responseProductItem);
         }
+
         [HttpPost]
         public IActionResult CreateProductItem(RequestCreateProductItemModel requestCreateProductItemModel)
         {
@@ -99,9 +88,9 @@ namespace MilkStore.API.Controllers
                 existedProductItem.Description = requestUpdateProductItemModel.Description;
                 existedProductItem.Image = requestUpdateProductItemModel.Image;
                 existedProductItem.Weight = requestUpdateProductItemModel.Weight;
+                _unitOfWork.ProductItemRepository.Update(existedProductItem);
+                _unitOfWork.Save();
             }
-            _unitOfWork.ProductItemRepository.Update(existedProductItem);
-            _unitOfWork.Save();
             return Ok();
         }
 
@@ -109,8 +98,11 @@ namespace MilkStore.API.Controllers
         public IActionResult DeleteProductItem(int id)
         {
             var existedProductItem = _unitOfWork.ProductItemRepository.GetByID(id);
-            _unitOfWork.ProductItemRepository.Delete(existedProductItem);
-            _unitOfWork.Save();
+            if (existedProductItem != null)
+            {
+                _unitOfWork.ProductItemRepository.Delete(existedProductItem);
+                _unitOfWork.Save();
+            }
             return Ok();
         }
     }

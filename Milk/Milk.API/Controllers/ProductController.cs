@@ -40,7 +40,7 @@ namespace MilkStore.API.Controllers
                 ProductId = requestCreateProductModel.ProductId,
                 ProductName = requestCreateProductModel.ProductName,
                 BrandMilkId = requestCreateProductModel.BrandMilkId,
-                AdminId = requestCreateProductModel.AdminId           
+                AdminId = requestCreateProductModel.AdminId
             };
             _unitOfWork.ProductRepository.Insert(product);
             _unitOfWork.Save();

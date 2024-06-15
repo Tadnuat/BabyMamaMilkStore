@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 
 // DbContext
 builder.Services.AddDbContext<MilkContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MyDbContext")));
 
 //  UnitOfWork
 builder.Services.AddScoped<UnitOfWork>();
