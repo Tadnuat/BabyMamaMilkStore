@@ -23,13 +23,36 @@ namespace MilkStore.API.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var responseProduct = _unitOfWork.ProductRepository.Get();
-            return Ok(responseProduct);
+            var products = _unitOfWork.ProductRepository.Get()
+                                    .Select(product => new ResponseProductModel
+                                    {
+                                        ProductId = product.ProductId,
+                                        ProductName = product.ProductName,
+                                        BrandMilkId = product.BrandMilkId,
+                                        AdminId = product.AdminId
+                                    })
+                                    .ToList();
+
+            return Ok(products);
         }
         [HttpGet("{id}")]
         public IActionResult GetProductById(int id)
         {
-            var responseProduct = _unitOfWork.ProductRepository.GetByID(id);
+            var product = _unitOfWork.ProductRepository.GetByID(id);
+
+            if (product == null)
+            {
+                return NotFound(); // Handle the not found case appropriately
+            }
+
+            var responseProduct = new ResponseProductModel
+            {
+                ProductId = product.ProductId,
+                ProductName = product.ProductName,
+                BrandMilkId = product.BrandMilkId,
+                AdminId = product.AdminId
+            };
+
             return Ok(responseProduct);
         }
         [HttpPost]

@@ -20,14 +20,41 @@ namespace MilkStore.API.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var responeOrderDetails = _unitOfWork.OrderDetailRepository.Get();
-            return Ok(responeOrderDetails);
+            var orderDetails = _unitOfWork.OrderDetailRepository.Get()
+                                    .Select(orderDetail => new ResponseOrderDetailModel
+                                    {
+                                        OrderDetailID = orderDetail.OrderDetailId,
+                                        OrderId = orderDetail.OrderId,
+                                        ProductItemId = orderDetail.ProductItemId,
+                                        Quantity = orderDetail.Quantity,
+                                        Price = orderDetail.Price,
+                                        OrderDetailStatus = orderDetail.OrderDetailStatus
+                                    })
+                                    .ToList();
+
+            return Ok(orderDetails);
         }
         [HttpGet("{id}")]
         public IActionResult GetOrderDetailById(int id)
         {
-            var responeOrderDetails = _unitOfWork.OrderDetailRepository.GetByID(id);
-            return Ok(responeOrderDetails);
+            var orderDetail = _unitOfWork.OrderDetailRepository.GetByID(id);
+
+            if (orderDetail == null)
+            {
+                return NotFound(); // Assuming you handle not found cases this way
+            }
+
+            var responseOrderDetail = new ResponseOrderDetailModel
+            {
+                OrderDetailID = orderDetail.OrderDetailId,
+                OrderId = orderDetail.OrderId,
+                ProductItemId = orderDetail.ProductItemId,
+                Quantity = orderDetail.Quantity,
+                Price = orderDetail.Price,
+                OrderDetailStatus = orderDetail.OrderDetailStatus
+            };
+
+            return Ok(responseOrderDetail);
         }
         [HttpPost]
         public IActionResult CreateOrderDetail(RequestCreateOrderDetailModel requestCreateOrderDetailModel)

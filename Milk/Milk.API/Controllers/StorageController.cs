@@ -21,14 +21,32 @@ namespace MilkStore.API.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var responeStorage = _unitOfWork.StorageRepository.Get();
-            return Ok(responeStorage);
+            var storageList = _unitOfWork.StorageRepository.Get();
+            var responseList = storageList.Select(storage => new ResponseStorageModel
+            {
+                StorageId = storage.StorageId,
+                StorageName = storage.StorageName,
+            }).ToList();
+
+            return Ok(responseList);
         }
         [HttpGet("{id}")]
         public IActionResult GetStorageById(int id)
         {
-            var responeStorage = _unitOfWork.StorageRepository.GetByID(id);
-            return Ok(responeStorage);
+            var storage = _unitOfWork.StorageRepository.GetByID(id);
+
+            if (storage == null)
+            {
+                return NotFound(); // Handle the not found case appropriately
+            }
+
+            var responseStorage = new ResponseStorageModel
+            {
+                StorageId = storage.StorageId,
+                StorageName = storage.StorageName,
+            };
+
+            return Ok(responseStorage);
         }
         [HttpPost]
         public IActionResult CreateOrderDetail(RequestCreateStorageModel requestCreateStorageModel)

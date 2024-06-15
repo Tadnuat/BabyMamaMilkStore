@@ -20,14 +20,37 @@ namespace MilkStore.API.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var responePayments = _unitOfWork.PaymentRepository.Get();
-            return Ok(responePayments);
+            var payments = _unitOfWork.PaymentRepository.Get()
+                                    .Select(payment => new ResponsePaymentModel
+                                    {
+                                        PaymentId = payment.PaymentId,
+                                        Amount = payment.Amount,
+                                        PaymentMethod = payment.PaymentMethod,
+                                        OrderId = payment.OrderId
+                                    })
+                                    .ToList();
+
+            return Ok(payments);
         }
         [HttpGet("{id}")]
         public IActionResult GetPaymentById(int id)
         {
-            var responePayments = _unitOfWork.PaymentRepository.GetByID(id);
-            return Ok(responePayments);
+            var payment = _unitOfWork.PaymentRepository.GetByID(id);
+
+            if (payment == null)
+            {
+                return NotFound(); // Handle the not found case appropriately
+            }
+
+            var responsePayment = new ResponsePaymentModel
+            {
+                PaymentId = payment.PaymentId,
+                Amount = payment.Amount,
+                PaymentMethod = payment.PaymentMethod,
+                OrderId = payment.OrderId
+            };
+
+            return Ok(responsePayment);
         }
         [HttpPost]
         public IActionResult CreatePayment(RequestCreatePaymentlModel requestCreatePaymentlModel)
