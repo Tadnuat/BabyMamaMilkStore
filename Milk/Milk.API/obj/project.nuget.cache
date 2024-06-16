@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "f4yp6qrHQGob+Ews1U2kGBPsXEk1DuVStIQaY+jnzDcEH9bA6PBzvNWYy34PYhpegdH9mKAFlBlMmx8FD2wVNw==",
+<<<<<<< Updated upstream
+  "dgSpecHash": "Rxuz+dVUwaKn11eacF/9Sl4U75g2gnyCZ9x9QklZaWphLubuHoRQtlbfvl9GuDfjupdz+oLph8mclGAZoq+SpQ==",
   "success": true,
   "projectFilePath": "D:\\SWP391\\BabyMamaMilkStore\\Milk\\Milk.API\\MilkStore.API.csproj",
+=======
+  "dgSpecHash": "txGQIcPBdMg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\MilkStore.API.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -86,5 +92,12 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\Milk\\Milk.API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
