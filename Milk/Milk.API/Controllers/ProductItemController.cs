@@ -18,6 +18,40 @@ namespace MilkStore.API.Controllers
             _unitOfWork = unitOfWork;
         }
 
+<<<<<<< Updated upstream
+        [HttpGet]
+        public IActionResult SearchProductItem([FromQuery] RequestSearchProductItemModel requestSearchProductItemModel)
+        {
+            Expression<Func<ProductItem, bool>> filter = x =>
+                (string.IsNullOrEmpty(requestSearchProductItemModel.ItemName) || x.ItemName.Contains(requestSearchProductItemModel.ItemName)) &&
+                x.Price >= requestSearchProductItemModel.FromPrice &&
+                (x.Price <= requestSearchProductItemModel.ToPrice || requestSearchProductItemModel.ToPrice == null);
+
+            Func<IQueryable<ProductItem>, IOrderedQueryable<ProductItem>> orderBy = query => query.OrderBy(p => p.Price);
+
+            if (requestSearchProductItemModel.SortContent != null)
+            {
+                var sortType = requestSearchProductItemModel.SortContent.SortProductItemType;
+
+                if (sortType == SortProductItemTypeEnum.Descending)
+                {
+                    orderBy = query => query.OrderByDescending(p => p.Price);
+                }
+            }
+
+            var responseProductItem = _unitOfWork.ProductItemRepository.Search(
+                searchExpression: filter,
+                includeProperties: "",
+                orderBy: orderBy,
+                pageIndex: requestSearchProductItemModel.PageIndex,
+                pageSize: requestSearchProductItemModel.PageSize
+            );
+
+            return Ok(responseProductItem);
+        }
+
+=======
+>>>>>>> Stashed changes
         [HttpGet("{id}")]
         public IActionResult GetProductItemById(int id)
         {
@@ -43,6 +77,8 @@ namespace MilkStore.API.Controllers
             return Ok(responseProductItem);
         }
 
+<<<<<<< Updated upstream
+=======
         [HttpGet]
         public IActionResult SearchProductItem([FromQuery] RequestSearchProductItemModel requestSearchProductItemModel)
         {
@@ -86,6 +122,7 @@ namespace MilkStore.API.Controllers
             return Ok(responseProductItems);
         }
 
+>>>>>>> Stashed changes
         [HttpPost]
         public IActionResult CreateProductItem(RequestCreateProductItemModel requestCreateProductItemModel)
         {
@@ -120,6 +157,12 @@ namespace MilkStore.API.Controllers
                 existedProductItem.Description = requestUpdateProductItemModel.Description;
                 existedProductItem.Image = requestUpdateProductItemModel.Image;
                 existedProductItem.Weight = requestUpdateProductItemModel.Weight;
+<<<<<<< Updated upstream
+                _unitOfWork.ProductItemRepository.Update(existedProductItem);
+                _unitOfWork.Save();
+            }
+            return Ok();
+=======
 
                 _unitOfWork.ProductItemRepository.Update(existedProductItem);
                 _unitOfWork.Save();
@@ -128,6 +171,7 @@ namespace MilkStore.API.Controllers
             }
 
             return NotFound(); // Handle the case when the item does not exist
+>>>>>>> Stashed changes
         }
 
         [HttpDelete("{id}")]
@@ -138,11 +182,16 @@ namespace MilkStore.API.Controllers
             {
                 _unitOfWork.ProductItemRepository.Delete(existedProductItem);
                 _unitOfWork.Save();
+<<<<<<< Updated upstream
+            }
+            return Ok();
+=======
 
                 return Ok(); // Assuming OK status code to indicate successful operation
             }
 
             return NotFound(); // Handle the case when the item does not exist
+>>>>>>> Stashed changes
         }
     }
 }
