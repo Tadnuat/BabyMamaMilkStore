@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C50F88CC-188E-4688-B977-37A989564837}|MilkStore.API\\MilkStore.API.csproj|c:\\users\\nh0kb\\source\\repos\\swp - 1506\\babymamamilkstore\\milkstore\\milkstore.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C50F88CC-188E-4688-B977-37A989564837}|MilkStore.API\\MilkStore.API.csproj|solutionrelative:milkstore.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2202D7C-2457-41A2-915B-7F3D1D40EC2C}|MilkStore.Repository\\MilkStore.Repo.csproj|c:\\users\\nh0kb\\source\\repos\\swp - 1506\\babymamamilkstore\\milkstore\\milkstore.repository\\entities\\milkcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2202D7C-2457-41A2-915B-7F3D1D40EC2C}|MilkStore.Repository\\MilkStore.Repo.csproj|solutionrelative:milkstore.repository\\entities\\milkcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2202D7C-2457-41A2-915B-7F3D1D40EC2C}|MilkStore.Repository\\MilkStore.Repo.csproj|c:\\users\\nh0kb\\source\\repos\\swp - 1506\\babymamamilkstore\\milkstore\\milkstore.repository\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2202D7C-2457-41A2-915B-7F3D1D40EC2C}|MilkStore.Repository\\MilkStore.Repo.csproj|solutionrelative:milkstore.repository\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2202D7C-2457-41A2-915B-7F3D1D40EC2C}|MilkStore.Repository\\MilkStore.Repo.csproj|c:\\users\\nh0kb\\source\\repos\\swp - 1506\\babymamamilkstore\\milkstore\\milkstore.repository\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2202D7C-2457-41A2-915B-7F3D1D40EC2C}|MilkStore.Repository\\MilkStore.Repo.csproj|solutionrelative:milkstore.repository\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2202D7C-2457-41A2-915B-7F3D1D40EC2C}|MilkStore.Repository\\MilkStore.Repo.csproj|c:\\users\\nh0kb\\source\\repos\\swp - 1506\\babymamamilkstore\\milkstore\\milkstore.repository\\entities\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2202D7C-2457-41A2-915B-7F3D1D40EC2C}|MilkStore.Repository\\MilkStore.Repo.csproj|solutionrelative:milkstore.repository\\entities\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MilkContext.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\Entities\\MilkContext.cs",
+              "RelativeDocumentMoniker": "MilkStore.Repository\\Entities\\MilkContext.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\Entities\\MilkContext.cs",
+              "RelativeToolTip": "MilkStore.Repository\\Entities\\MilkContext.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAwwJwAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:11:42.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "MilkStore.Repository\\Entities\\Customer.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\Entities\\Customer.cs",
+              "RelativeToolTip": "MilkStore.Repository\\Entities\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:11:34.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Country.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\Entities\\Country.cs",
+              "RelativeDocumentMoniker": "MilkStore.Repository\\Entities\\Country.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\Entities\\Country.cs",
+              "RelativeToolTip": "MilkStore.Repository\\Entities\\Country.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:11:34.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\Entities\\Admin.cs",
+              "RelativeDocumentMoniker": "MilkStore.Repository\\Entities\\Admin.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\Entities\\Admin.cs",
+              "RelativeToolTip": "MilkStore.Repository\\Entities\\Admin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:11:28.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.API\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "MilkStore.API\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.API\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "MilkStore.API\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvygAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:09:17.234Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
