@@ -33,7 +33,8 @@ CREATE TABLE BrandMilk (
 CREATE TABLE Admin (
     AdminID INT PRIMARY KEY,
     Username NVARCHAR(MAX) NOT NULL,
-    Password NVARCHAR(MAX) NOT NULL
+    Password NVARCHAR(MAX) NOT NULL,
+Role nvarchar(Max)
 );
 
 CREATE TABLE Customer (
