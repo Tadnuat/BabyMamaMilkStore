@@ -4111,11 +4111,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj",
+      "projectUniqueName": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj",
       "projectName": "MilkStore.Repo",
-      "projectPath": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj",
+      "projectPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj",
       "packagesPath": "C:\\Users\\nh0kb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nh0kb\\source\\repos\\SWP - 1506\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\obj\\",
+      "outputPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nh0kb\\AppData\\Roaming\\NuGet\\NuGet.Config",
