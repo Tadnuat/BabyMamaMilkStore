@@ -17,12 +17,19 @@ INSERT INTO BrandMilk (BrandMilkID, BrandName, CompanyID) VALUES
 (3, 'Brand 3', 3),
 (4, 'Brand 4', 4),
 (5, 'Brand 5', 5);
-INSERT INTO Admin (AdminID, Username, Password) VALUES
-(1, 'admin1', 'password1'),
-(2, 'admin2', 'password2'),
-(3, 'admin3', 'password3'),
-(4, 'admin4', 'password4'),
-(5, 'admin5', 'password5');
+-- Insert 10 records into the Admin table
+INSERT INTO Admin (AdminID, Username, Password, Role) VALUES 
+(1, 'admin1', 'password1', 'admin'),
+(2, 'manager1', 'password2', 'manager'),
+(3, 'admin2', 'password3', 'admin'),
+(4, 'manager2', 'password4', 'manager'),
+(5, 'admin3', 'password5', 'admin'),
+(6, 'manager3', 'password6', 'manager'),
+(7, 'admin4', 'password7', 'admin'),
+(8, 'manager4', 'password8', 'manager'),
+(9, 'admin5', 'password9', 'admin'),
+(10, 'manager5', 'password10', 'manager');
+
 INSERT INTO Customer (CustomerID, CustomerName, Email, Password, Phone) VALUES
 (1, 'Customer 1', 'customer1@example.com', 'password1', '1234567890'),
 (2, 'Customer 2', 'customer2@example.com', 'password2', '2345678901'),
