@@ -4,7 +4,6 @@
     {
 
         public int OrderId { get; set; }
-        public int? AdminId { get; set; }
         public int? CustomerId { get; set; }
         public int? DeliveryManId { get; set; }
         public DateOnly? OrderDate { get; set; }

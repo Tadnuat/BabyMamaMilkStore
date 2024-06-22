@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.API\\MilkStore.API.csproj": {}
+    "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStore\\MilkStore.API\\MilkStore.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.API\\MilkStore.API.csproj": {
+    "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStore\\MilkStore.API\\MilkStore.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.API\\MilkStore.API.csproj",
+        "projectUniqueName": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStore\\MilkStore.API\\MilkStore.API.csproj",
         "projectName": "MilkStore.API",
-        "projectPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.API\\MilkStore.API.csproj",
-        "packagesPath": "C:\\Users\\nh0kb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.API\\obj\\",
+        "projectPath": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStore\\MilkStore.API\\MilkStore.API.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStore\\MilkStore.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nh0kb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj": {
-                "projectPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj"
+              "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj": {
+                "projectPath": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj"
               }
             }
           }
@@ -88,21 +91,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj": {
+    "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj",
+        "projectUniqueName": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj",
         "projectName": "MilkStore.Repo",
-        "projectPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj",
-        "packagesPath": "C:\\Users\\nh0kb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nh0kb\\source\\repos\\SWP\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\obj\\",
+        "projectPath": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\MilkStore.Repo.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStore\\MilkStore.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nh0kb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -110,7 +117,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -167,7 +173,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

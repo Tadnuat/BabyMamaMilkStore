@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MilkStore.Repo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6559293769ed4320dabec97ac604ba0e99782df0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74c5052c9e8259fc3acf75150e6edb6a121c0714")]
 [assembly: System.Reflection.AssemblyProductAttribute("MilkStore.Repo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MilkStore.Repo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

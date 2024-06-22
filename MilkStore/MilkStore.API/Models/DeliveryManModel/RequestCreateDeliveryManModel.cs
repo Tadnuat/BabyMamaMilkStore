@@ -8,6 +8,7 @@
         public string? DeliveryName { get; set; }
         public string? DeliveryStatus { get; set; }
         public string? PhoneNumber { get; set; }
+        public int? StorageId { get; set; }
 
     }
 }

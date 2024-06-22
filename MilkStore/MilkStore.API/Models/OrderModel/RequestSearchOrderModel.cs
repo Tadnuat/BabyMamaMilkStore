@@ -1,10 +1,9 @@
-﻿
-
-namespace MilkStore.API.Models.OrderModel
+﻿namespace MilkStore.API.Models.OrderModel
 {
     public class RequestSearchOrderModel
     {
-        public int? OrderId { get; set; }
+        public int? Month { get; set; }
+        public int? Year { get; set; }
         public int pageIndex { get; set; }
         public int pageSize { get; set; }
         public SortContent SortContent { get; set; }
@@ -12,13 +11,12 @@ namespace MilkStore.API.Models.OrderModel
 
     public class SortContent
     {
-        public string sortOrderBy { get; set; }
         public SortOrderTypeEnum sortOrderType { get; set; }
     }
 
     public enum SortOrderTypeEnum
     {
-        Ascending,
-        Descending
+        Ascending = 1,
+        Descending = 2
     }
 }

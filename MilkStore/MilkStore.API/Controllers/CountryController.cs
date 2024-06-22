@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MilkStore.API.Models.CountryModel;
+using MilkStore.API.Models.PaymentModel;
 using MilkStore.Repo.Entities;
 using MilkStore.Repo.UnitOfWork;
 using System.Linq.Expressions;
@@ -25,41 +26,21 @@ namespace MilkStore.API.Controllers
         /// </summary>
         /// <param name="requestSearchCountryModel"></param>
         /// <returns></returns>
-        [HttpGet("SearchCountry")]
-        public IActionResult SearchCountry([FromQuery] RequestSearchCountryModel requestSearchCountryModel)
+       
+        [HttpGet]
+        public IActionResult GetAll()
         {
-            var sortBy = requestSearchCountryModel.SortContent?.sortCountryBy;
-            var sortType = requestSearchCountryModel.SortContent?.sortCountryType.ToString();
+            var countries = _unitOfWork.CountryRepository.Get()
+                                    .Select(country => new ResponseCountryModel
+                                    {
+                                        CountryId = country.CountryId,
+                                        CountryName = country.CountryName,
 
-            Expression<Func<Country, bool>> filter = x =>
-                (string.IsNullOrEmpty(requestSearchCountryModel.CountryName) || x.CountryName.Contains(requestSearchCountryModel.CountryName)) &&
-                (x.CountryId == requestSearchCountryModel.CountryId || requestSearchCountryModel.CountryId == null);
+                                    })
+                                    .ToList();
 
-            Func<IQueryable<Country>, IOrderedQueryable<Country>> orderBy = null;
-
-            if (!string.IsNullOrEmpty(sortBy))
-            {
-                if (sortType == SortCountryTypeEnum.Ascending.ToString())
-                {
-                    orderBy = query => query.OrderBy(p => EF.Property<object>(p, sortBy));
-                }
-                else if (sortType == SortCountryTypeEnum.Descending.ToString())
-                {
-                    orderBy = query => query.OrderByDescending(p => EF.Property<object>(p, sortBy));
-                }
-            }
-
-            var responseCountry = _unitOfWork.CountryRepository.Get(
-                filter,
-                orderBy,
-                includeProperties: "",
-                pageIndex: requestSearchCountryModel.pageIndex,
-                pageSize: requestSearchCountryModel.pageSize
-            );
-
-            return Ok(responseCountry);
+            return Ok(countries);
         }
-
         [HttpGet("{id}")]
         public IActionResult GetCountryById(int id)
         {
@@ -68,7 +49,14 @@ namespace MilkStore.API.Controllers
             {
                 return NotFound();
             }
-            return Ok(country);
+            var responseCountry = new ResponseCountryModel
+            {
+                CountryId = country.CountryId,
+                CountryName = country.CountryName,
+
+            };
+
+            return Ok(responseCountry);
         }
 
         [HttpPost]
@@ -87,7 +75,7 @@ namespace MilkStore.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateCountry(int id, RequestCreateCountryModel requestCreateCountryModel)
+        public IActionResult UpdateCountry(int id, RequestUpdateCountryModel requestUpdateCountryModel)
         {
             var existedCountryEntity = _unitOfWork.CountryRepository.GetByID(id);
             if (existedCountryEntity == null)
@@ -95,8 +83,8 @@ namespace MilkStore.API.Controllers
                 return NotFound();
             }
 
-            existedCountryEntity.CountryName = requestCreateCountryModel.CountryName;
-         
+            existedCountryEntity.CountryName = requestUpdateCountryModel.CountryName;
+
             _unitOfWork.CountryRepository.Update(existedCountryEntity);
             _unitOfWork.Save();
             return Ok(existedCountryEntity);

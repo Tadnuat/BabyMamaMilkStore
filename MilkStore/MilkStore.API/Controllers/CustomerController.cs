@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MilkStore.API.Models.CountryModel;
 using MilkStore.API.Models.CustomerModel;
 using MilkStore.Repo.Entities;
 using MilkStore.Repo.UnitOfWork;
+using System.Diagnostics.Metrics;
 using System.Linq.Expressions;
 
 namespace MilkStore.API.Controllers
@@ -34,7 +36,7 @@ namespace MilkStore.API.Controllers
 
             Expression<Func<Customer, bool>> filter = x =>
                 (string.IsNullOrEmpty(requestSearchCustomerModel.CustomerName) || x.CustomerName.Contains(requestSearchCustomerModel.CustomerName)) &&
-                (x.CustomerID == requestSearchCustomerModel.CustomerID || requestSearchCustomerModel.CustomerID == null);
+                (x.CustomerId == requestSearchCustomerModel.CustomerId || requestSearchCustomerModel.CustomerId == null);
 
             Func<IQueryable<Customer>, IOrderedQueryable<Customer>> orderBy = null;
 
@@ -60,6 +62,23 @@ namespace MilkStore.API.Controllers
 
             return Ok(requestSearchCustomerModel);
         }
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var customers = _unitOfWork.CustomerRepository.Get()
+                                    .Select(customer => new ResponseCustomerModel
+                                    {
+                                        CustomerId = customer.CustomerId,
+                                        CustomerName = customer.CustomerName,
+                                        Email = customer.Email,
+                                        Password = customer.Password,
+                                        Phone = customer.Phone
+
+                                    })
+                                    .ToList();
+
+            return Ok(customers);
+        }
 
         [HttpGet("{id}")]
         public IActionResult GetCustomerById(int id)
@@ -69,7 +88,18 @@ namespace MilkStore.API.Controllers
             {
                 return NotFound();
             }
-            return Ok(customer);
+            var responseCustomer = new ResponseCustomerModel
+            {
+                CustomerId = customer.CustomerId,
+                CustomerName = customer.CustomerName,
+                Email = customer.Email,
+                Password = customer.Password,
+                Phone = customer.Phone
+
+
+            };
+
+            return Ok(responseCustomer);
         }
 
         [HttpPost]
@@ -77,10 +107,11 @@ namespace MilkStore.API.Controllers
         {
             var customerEntity = new Customer
             {
-               
+                CustomerId = requestCreateCustomerModel.CustomerId,
                 CustomerName = requestCreateCustomerModel.CustomerName,
                 Email = requestCreateCustomerModel.Email,
-                Password = requestCreateCustomerModel.Password
+                Password = requestCreateCustomerModel.Password,
+                Phone = requestCreateCustomerModel.Phone
 
 
             };
@@ -90,7 +121,7 @@ namespace MilkStore.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateCustomer(int id, RequestCreateCustomerModel requestCreateCustomerModel)
+        public IActionResult UpdateCustomer(int id, RequestUpdateCustomerModel requestUpdateCustomerModel)
         {
             var existedCustomerEntity = _unitOfWork.CustomerRepository.GetByID(id);
             if (existedCustomerEntity == null)
@@ -98,9 +129,10 @@ namespace MilkStore.API.Controllers
                 return NotFound();
             }
 
-            existedCustomerEntity.CustomerName = requestCreateCustomerModel.CustomerName;
-            existedCustomerEntity.Email = requestCreateCustomerModel.Email;
-            existedCustomerEntity.Password = requestCreateCustomerModel.Password;
+            existedCustomerEntity.CustomerName = requestUpdateCustomerModel.CustomerName;
+            existedCustomerEntity.Email = requestUpdateCustomerModel.Email;
+            existedCustomerEntity.Password = requestUpdateCustomerModel.Password;
+            existedCustomerEntity.Phone = requestUpdateCustomerModel.Phone;
 
             _unitOfWork.CustomerRepository.Update(existedCustomerEntity);
             _unitOfWork.Save();

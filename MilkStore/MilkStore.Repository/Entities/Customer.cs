@@ -5,7 +5,7 @@ namespace MilkStore.Repo.Entities;
 
 public partial class Customer
 {
-    public int CustomerID { get; set; }
+    public int CustomerId { get; set; }
 
     public string CustomerName { get; set; } = null!;
 

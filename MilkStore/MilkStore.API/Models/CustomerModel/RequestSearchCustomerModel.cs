@@ -4,7 +4,7 @@ namespace MilkStore.API.Models.CustomerModel
 {
     public class RequestSearchCustomerModel
     {
-        public int? CustomerID { get; set; }
+        public int? CustomerId { get; set; }
         public string CustomerName { get; set; }
         public int pageIndex { get; set; }
         public int pageSize { get; set; }

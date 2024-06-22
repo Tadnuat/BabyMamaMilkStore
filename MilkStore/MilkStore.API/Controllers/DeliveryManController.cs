@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MilkStore.API.Models.CustomerModel;
 using MilkStore.API.Models.DeliveryManModel;
 using MilkStore.Repo.Entities;
 using MilkStore.Repo.UnitOfWork;
@@ -59,6 +60,23 @@ namespace MilkStore.API.Controllers
 
             return Ok(requestSearchDeliveryManModel);
         }
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var deliveryMans = _unitOfWork.DeliveryManRepository.Get()
+                                    .Select(deliveryMan => new ResponseDeliveryManModel
+                                    {
+                                        DeliveryManId = deliveryMan.DeliveryManId,
+                                        DeliveryName = deliveryMan.DeliveryName,
+                                        DeliveryStatus = deliveryMan.DeliveryStatus,
+                                        PhoneNumber = deliveryMan.PhoneNumber,
+                                        StorageId = deliveryMan.StorageId
+
+                                    })
+                                    .ToList();
+
+            return Ok(deliveryMans);
+        }
 
         [HttpGet("{id}")]
         public IActionResult GetDeliveryManById(int id)
@@ -68,7 +86,18 @@ namespace MilkStore.API.Controllers
             {
                 return NotFound();
             }
-            return Ok(delivery);
+            var responseDeliveryMan = new ResponseDeliveryManModel
+            {
+                DeliveryManId = delivery.DeliveryManId,
+                DeliveryName = delivery.DeliveryName,
+                DeliveryStatus = delivery.DeliveryStatus,
+                PhoneNumber = delivery.PhoneNumber,
+                StorageId = delivery.StorageId
+
+
+            };
+
+            return Ok(responseDeliveryMan);
         }
 
         [HttpPost]
@@ -79,7 +108,8 @@ namespace MilkStore.API.Controllers
                 DeliveryManId = requestCreateDeliveryManModel.DeliveryManId,
                 DeliveryName = requestCreateDeliveryManModel.DeliveryName,
                 DeliveryStatus = requestCreateDeliveryManModel.DeliveryStatus,
-                PhoneNumber = requestCreateDeliveryManModel.PhoneNumber
+                PhoneNumber = requestCreateDeliveryManModel.PhoneNumber,
+                StorageId = requestCreateDeliveryManModel.StorageId
 
 
             };
@@ -89,7 +119,7 @@ namespace MilkStore.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateDeliveryMan(int id, RequestCreateDeliveryManModel requestCreateDeliveryManModel)
+        public IActionResult UpdateDeliveryMan(int id, RequestUpdateDeliveryManModel requestUpdateDeliveryManModel)
         {
             var existedDeliveryManEntity = _unitOfWork.DeliveryManRepository.GetByID(id);
             if (existedDeliveryManEntity == null)
@@ -97,9 +127,10 @@ namespace MilkStore.API.Controllers
                 return NotFound();
             }
 
-            existedDeliveryManEntity.DeliveryName = requestCreateDeliveryManModel.DeliveryName;
-            existedDeliveryManEntity.DeliveryStatus = requestCreateDeliveryManModel.DeliveryStatus;
-            existedDeliveryManEntity.PhoneNumber = requestCreateDeliveryManModel.PhoneNumber;
+            existedDeliveryManEntity.DeliveryName = requestUpdateDeliveryManModel.DeliveryName;
+            existedDeliveryManEntity.DeliveryStatus = requestUpdateDeliveryManModel.DeliveryStatus;
+            existedDeliveryManEntity.PhoneNumber = requestUpdateDeliveryManModel.PhoneNumber;
+            existedDeliveryManEntity.StorageId = requestUpdateDeliveryManModel.StorageId;
 
             _unitOfWork.DeliveryManRepository.Update(existedDeliveryManEntity);
             _unitOfWork.Save();

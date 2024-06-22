@@ -27,3 +27,18 @@ C:\Users\nh0kb\source\repos\SWP - 1506\BabyMamaMilkStore\MilkStore\MilkStore.Rep
 C:\Users\nh0kb\source\repos\SWP - 1506\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.pdb
 C:\Users\nh0kb\source\repos\SWP - 1506\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.genruntimeconfig.cache
 C:\Users\nh0kb\source\repos\SWP - 1506\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\ref\MilkStore.Repo.dll
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.csproj.AssemblyReference.cache
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.AssemblyInfoInputs.cache
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.AssemblyInfo.cs
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.csproj.CoreCompileInputs.cache
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.sourcelink.json
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.dll
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\refint\MilkStore.Repo.dll
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.pdb
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\bin\Debug\net8.0\MilkStore.Repo.deps.json
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\bin\Debug\net8.0\MilkStore.Repo.runtimeconfig.json
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\bin\Debug\net8.0\MilkStore.Repo.dll
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\bin\Debug\net8.0\MilkStore.Repo.pdb
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\MilkStore.Repo.genruntimeconfig.cache
+D:\.NET Framework and C#\BabyMamaMilkStore\MilkStore\MilkStore.Repository\obj\Debug\net8.0\ref\MilkStore.Repo.dll

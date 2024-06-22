@@ -41,7 +41,7 @@ public partial class MilkContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=ALIEN\\SQLEXPRESS;Database=Milk;User Id=sa;Password=12345;TrustServerCertificate=True;");
+        => optionsBuilder.UseSqlServer("Server=(local);Database=Milk;User Id=sa;Password=12345;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -125,11 +125,11 @@ public partial class MilkContext : DbContext
 
         modelBuilder.Entity<Customer>(entity =>
         {
-            entity.HasKey(e => e.CustomerID).HasName("PK__Customer__A4AE64B8F3DA30BC");
+            entity.HasKey(e => e.CustomerId).HasName("PK__Customer__A4AE64B8F3DA30BC");
 
             entity.ToTable("Customer");
 
-            entity.Property(e => e.CustomerID)
+            entity.Property(e => e.CustomerId)
                 .ValueGeneratedNever()
                 .HasColumnName("CustomerID");
             entity.Property(e => e.CustomerName).HasColumnType("text");
@@ -141,11 +141,11 @@ public partial class MilkContext : DbContext
         });
         modelBuilder.Entity<Customer>(entity =>
         {
-            entity.HasKey(e => e.CustomerID).HasName("PK__Customer__A4AE64B8F3DA30BC");
+            entity.HasKey(e => e.CustomerId).HasName("PK__Customer__A4AE64B8F3DA30BC");
 
             entity.ToTable("Customer");
 
-            entity.Property(e => e.CustomerID)
+            entity.Property(e => e.CustomerId)
                 .ValueGeneratedNever()
                 .HasColumnName("CustomerID");
             entity.Property(e => e.CustomerName).HasColumnType("nvarchar(max)");

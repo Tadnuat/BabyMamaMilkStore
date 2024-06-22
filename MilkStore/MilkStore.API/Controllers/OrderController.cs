@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client.Extensions.Msal;
 using MilkStore.API.Models.DeliveryManModel;
 using MilkStore.API.Models.OrderModel;
+using MilkStore.API.Models.ProductItemModel;
 using MilkStore.Repo.Entities;
 using MilkStore.Repo.UnitOfWork;
+using System;
+using System.Linq;
 using System.Linq.Expressions;
 
 namespace MilkStore.API.Controllers
@@ -21,36 +23,40 @@ namespace MilkStore.API.Controllers
         }
 
         /// <summary>
-        /// SortBy (AdminId = 1, Username = 2, ...)
-        /// 
-        /// SortType (Ascending = 1,Descending = 2)        
+        /// Search orders based on filters including Month and Year.
         /// </summary>
-        /// <param name="requestSearchOrderModel"></param>
-        /// <returns></returns>
+        /// <param name="requestSearchOrderModel">Search parameters.</param>
+        /// <returns>List of orders matching the search criteria.</returns>
         [HttpGet("SearchOrder")]
         public IActionResult SearchOrder([FromQuery] RequestSearchOrderModel requestSearchOrderModel)
         {
-            var sortBy = requestSearchOrderModel.SortContent?.sortOrderBy;
-            var sortType = requestSearchOrderModel.SortContent?.sortOrderType.ToString();
+            // Extract filter parameters
+            var month = requestSearchOrderModel.Month;
+            var year = requestSearchOrderModel.Year;
 
+            // Define filter expression
             Expression<Func<Order, bool>> filter = x =>
-                (x.OrderId == requestSearchOrderModel.OrderId || requestSearchOrderModel.OrderId == null);
+                (!month.HasValue || (x.OrderDate.HasValue && x.OrderDate.Value.Month == month.Value)) &&
+                (!year.HasValue || (x.OrderDate.HasValue && x.OrderDate.Value.Year == year.Value));
 
             Func<IQueryable<Order>, IOrderedQueryable<Order>> orderBy = null;
 
-            if (!string.IsNullOrEmpty(sortBy))
+            if (requestSearchOrderModel.SortContent != null)
             {
-                if (sortType == SortOrderTypeEnum.Ascending.ToString())
+                var sortType = requestSearchOrderModel.SortContent.sortOrderType;
+
+                if (sortType == SortOrderTypeEnum.Ascending)
                 {
-                    orderBy = query => query.OrderBy(p => EF.Property<object>(p, sortBy));
+                    orderBy = query => query.OrderBy(p => p.OrderDate.Value.Year).ThenBy(p => p.OrderDate.Value.Month);
                 }
-                else if (sortType == SortOrderTypeEnum.Descending.ToString())
+                else if (sortType == SortOrderTypeEnum.Descending)
                 {
-                    orderBy = query => query.OrderByDescending(p => EF.Property<object>(p, sortBy));
+                    orderBy = query => query.OrderByDescending(p => p.OrderDate.Value.Year).ThenByDescending(p => p.OrderDate.Value.Month);
                 }
             }
 
-            var responseOrder = _unitOfWork.OrderRepository.Get(
+            // Get orders from repository based on filter and sorting
+            var ordersQuery = _unitOfWork.OrderRepository.Get(
                 filter,
                 orderBy,
                 includeProperties: "",
@@ -58,7 +64,38 @@ namespace MilkStore.API.Controllers
                 pageSize: requestSearchOrderModel.pageSize
             );
 
+            // Project the result to OrderDTO
+            var responseOrder = ordersQuery.Select(order => new ResponseOrderModel
+            {
+                OrderId = order.OrderId,
+                CustomerId = order.CustomerId,
+                DeliveryManId = order.DeliveryManId,
+                OrderDate = order.OrderDate,
+                ShippingAddress = order.ShippingAddress,
+                TotalAmount = order.TotalAmount,
+                StorageId = order.StorageId
+            }).ToList();
+
             return Ok(responseOrder);
+        }
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var orders = _unitOfWork.OrderRepository.Get()
+                                    .Select(order => new ResponseOrderModel
+                                    {
+                                        OrderId = order.OrderId,
+                                        CustomerId = order.CustomerId,
+                                        DeliveryManId = order.DeliveryManId,
+                                        OrderDate = order.OrderDate,
+                                        ShippingAddress = order.ShippingAddress,
+                                        TotalAmount= order.TotalAmount,
+                                        StorageId= order.StorageId
+
+                                    })
+                                    .ToList();
+
+            return Ok(orders);
         }
 
         [HttpGet("{id}")]
@@ -69,7 +106,18 @@ namespace MilkStore.API.Controllers
             {
                 return NotFound();
             }
-            return Ok(order);
+            var responseOrder = new ResponseOrderModel
+            {
+                OrderId = order.OrderId,
+                CustomerId = order.CustomerId,
+                DeliveryManId = order.DeliveryManId,
+                OrderDate = order.OrderDate,
+                ShippingAddress = order.ShippingAddress,
+                TotalAmount = order.TotalAmount,
+                StorageId = order.StorageId
+            };
+
+            return Ok(responseOrder);
         }
 
         [HttpPost]
@@ -91,19 +139,19 @@ namespace MilkStore.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateOrder(int id, RequestCreateOrderModel requestCreateOrderModel)
+        public IActionResult UpdateOrder(int id, RequestUpdateOrderModel requestUpdateOrderModel)
         {
             var existedOrderEntity = _unitOfWork.OrderRepository.GetByID(id);
             if (existedOrderEntity == null)
             {
                 return NotFound();
             }
-            existedOrderEntity.CustomerId = requestCreateOrderModel.CustomerId;
-            existedOrderEntity.DeliveryManId = requestCreateOrderModel.DeliveryManId;
-            existedOrderEntity.OrderDate = requestCreateOrderModel.OrderDate;
-            existedOrderEntity.ShippingAddress = requestCreateOrderModel.ShippingAddress;
-            existedOrderEntity.TotalAmount = requestCreateOrderModel.TotalAmount;
-            existedOrderEntity.StorageId = requestCreateOrderModel.StorageId;
+            existedOrderEntity.CustomerId = requestUpdateOrderModel.CustomerId;
+            existedOrderEntity.DeliveryManId = requestUpdateOrderModel.DeliveryManId;
+            existedOrderEntity.OrderDate = requestUpdateOrderModel.OrderDate;
+            existedOrderEntity.ShippingAddress = requestUpdateOrderModel.ShippingAddress;
+            existedOrderEntity.TotalAmount = requestUpdateOrderModel.TotalAmount;
+            existedOrderEntity.StorageId = requestUpdateOrderModel.StorageId;
 
             _unitOfWork.OrderRepository.Update(existedOrderEntity);
             _unitOfWork.Save();
