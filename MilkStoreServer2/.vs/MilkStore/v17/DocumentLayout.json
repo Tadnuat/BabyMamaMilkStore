@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStoreServer1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C50F88CC-188E-4688-B977-37A989564837}|MilkStore.API\\MilkStore.API.csproj|d:\\.net framework and c#\\babymamamilkstore\\milkstoreserver1\\milkstore.api\\models\\ordermodel\\requestcreateordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C50F88CC-188E-4688-B977-37A989564837}|MilkStore.API\\MilkStore.API.csproj|solutionrelative:milkstore.api\\models\\ordermodel\\requestcreateordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2202D7C-2457-41A2-915B-7F3D1D40EC2C}|MilkStore.Repository\\MilkStore.Repo.csproj|d:\\.net framework and c#\\babymamamilkstore\\milkstoreserver1\\milkstore.repository\\entities\\milkcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2202D7C-2457-41A2-915B-7F3D1D40EC2C}|MilkStore.Repository\\MilkStore.Repo.csproj|solutionrelative:milkstore.repository\\entities\\milkcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RequestCreateOrderModel.cs",
+              "DocumentMoniker": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStoreServer1\\MilkStore.API\\Models\\OrderModel\\RequestCreateOrderModel.cs",
+              "RelativeDocumentMoniker": "MilkStore.API\\Models\\OrderModel\\RequestCreateOrderModel.cs",
+              "ToolTip": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStoreServer1\\MilkStore.API\\Models\\OrderModel\\RequestCreateOrderModel.cs",
+              "RelativeToolTip": "MilkStore.API\\Models\\OrderModel\\RequestCreateOrderModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowAcAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T10:53:01.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MilkContext.cs",
+              "DocumentMoniker": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStoreServer1\\MilkStore.Repository\\Entities\\MilkContext.cs",
+              "RelativeDocumentMoniker": "MilkStore.Repository\\Entities\\MilkContext.cs",
+              "ToolTip": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStoreServer1\\MilkStore.Repository\\Entities\\MilkContext.cs",
+              "RelativeToolTip": "MilkStore.Repository\\Entities\\MilkContext.cs",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAswJMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:10:33.813Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
