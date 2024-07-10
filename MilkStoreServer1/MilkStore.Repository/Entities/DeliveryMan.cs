@@ -14,6 +14,8 @@ public partial class DeliveryMan
     public string PhoneNumber { get; set; } = null!;
 
     public int? StorageId { get; set; }
+    public string StorageName { get; set; } = null!;
+    public string Delete { get; set; } = null!;
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 

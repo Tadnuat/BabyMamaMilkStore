@@ -5,7 +5,7 @@
         public int OrderId { get; set; }
         public int? CustomerId { get; set; }
 
-        public int? DeliveryManId { get; set; }
+        public int? DeliveryManId { get; set; } = null;
 
         public DateTime? OrderDate { get; set; } // Chuyển sang DateTime
 

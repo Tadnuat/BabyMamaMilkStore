@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G5J3hm0lncZoWbsWLV5742S7FOAbgLinG4ymy4zCKwYtvQmMIq+4y6N/oZwzf+W5IjevfunFgL4BPb+z1z/xzA==",
+  "dgSpecHash": "KgL2eTvtUW/Q6KzcHzq2xErBLiXxdG8Ye5uBmFQ5zW8Jftfo8xLRRz6B342uzXP913lr2jqyJm9Ab+eetuxx2w==",
   "success": true,
-  "projectFilePath": "D:\\.NET Framework and C#\\MilkStoreServer1\\MilkStore.Repository\\MilkStore.Repo.csproj",
+  "projectFilePath": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStoreServer1\\MilkStore.Repository\\MilkStore.Repo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

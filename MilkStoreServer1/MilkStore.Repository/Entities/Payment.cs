@@ -13,5 +13,7 @@ public partial class Payment
 
     public int? OrderId { get; set; }
 
+    public string Delete { get; set; } = null!;
+
     public virtual Order? Order { get; set; }
 }

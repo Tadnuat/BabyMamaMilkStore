@@ -4405,11 +4405,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.NET Framework and C#\\MilkStoreServer1\\MilkStore.API\\MilkStore.API.csproj",
+      "projectUniqueName": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStoreServer1\\MilkStore.API\\MilkStore.API.csproj",
       "projectName": "MilkStore.API",
-      "projectPath": "D:\\.NET Framework and C#\\MilkStoreServer1\\MilkStore.API\\MilkStore.API.csproj",
+      "projectPath": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStoreServer1\\MilkStore.API\\MilkStore.API.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "D:\\.NET Framework and C#\\MilkStoreServer1\\MilkStore.API\\obj\\",
+      "outputPath": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStoreServer1\\MilkStore.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4430,8 +4430,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\.NET Framework and C#\\MilkStoreServer1\\MilkStore.Repository\\MilkStore.Repo.csproj": {
-              "projectPath": "D:\\.NET Framework and C#\\MilkStoreServer1\\MilkStore.Repository\\MilkStore.Repo.csproj"
+            "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStoreServer1\\MilkStore.Repository\\MilkStore.Repo.csproj": {
+              "projectPath": "D:\\.NET Framework and C#\\BabyMamaMilkStore\\MilkStoreServer1\\MilkStore.Repository\\MilkStore.Repo.csproj"
             }
           }
         }

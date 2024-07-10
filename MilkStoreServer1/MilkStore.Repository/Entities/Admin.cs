@@ -11,4 +11,5 @@ public partial class Admin
 
     public string Password { get; set; } = null!;
     public string Role { get; set; } = null!;
+    public string Delete { get; set; } = null!;
 }

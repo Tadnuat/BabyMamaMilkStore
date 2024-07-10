@@ -18,11 +18,11 @@
 
         public string? Image { get; set; }
 
-        public int? OrderStatus { get; set; }
 
         public decimal? Discount { get; set; } // Added Discount property
 
         public int? StockQuantity { get; set; } // Added StockQuantity property
+        public string Delete { get; set; } = null!;
 
         public virtual Order? Order { get; set; }
 

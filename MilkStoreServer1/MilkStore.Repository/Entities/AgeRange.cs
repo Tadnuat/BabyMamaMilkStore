@@ -12,6 +12,7 @@ public partial class AgeRange
     public string? Mama { get; set; }
 
     public int? ProductItemID { get; set; }
+    public string Delete { get; set; } = null!;
 
     public virtual ProductItem? ProductItem { get; set; }
 }

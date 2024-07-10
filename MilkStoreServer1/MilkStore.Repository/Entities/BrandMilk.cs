@@ -10,6 +10,7 @@ public partial class BrandMilk
     public string BrandName { get; set; } = null!;
 
     public int? CompanyID { get; set; }
+    public string Delete { get; set; } = null!;
 
     public virtual Company? Company { get; set; }
 

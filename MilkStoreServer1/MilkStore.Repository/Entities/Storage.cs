@@ -8,6 +8,7 @@ public partial class Storage
     public int StorageId { get; set; }
 
     public string StorageName { get; set; } = null!;
+    public string Delete { get; set; } = null!;
 
     public virtual ICollection<DeliveryMan> DeliveryMen { get; set; } = new List<DeliveryMan>();
 

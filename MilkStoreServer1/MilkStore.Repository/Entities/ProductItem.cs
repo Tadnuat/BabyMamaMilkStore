@@ -40,6 +40,7 @@ namespace MilkStore.Repo.Entities
         public int SoldQuantity { get; set; }
 
         public int StockQuantity { get; set; }
+        public string Delete { get; set; } = null!;
 
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
 
