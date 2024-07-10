@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MilkStore.API</name>
+    </assembly>
+    <members>
+        <member name="M:MilkStore.API.Controllers.CountryController.GetAll">
+            <summary>
+            SortBy (AdminId = 1, Username = 2, ...)
+            
+            SortType (Ascending = 1,Descending = 2)        
+            </summary>
+            <param name="requestSearchCountryModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MilkStore.API.Controllers.CustomerController.SearchCustomer(MilkStore.API.Models.CustomerModel.RequestSearchCustomerModel)">
+            <summary>
+            Search and sort customers by CustomerName
+            </summary>
+            <param name="requestSearchCustomerModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MilkStore.API.Controllers.DeliveryManController.SearchDeliveryMan(MilkStore.API.Models.DeliveryManModel.RequestSearchDeliveryManModel)">
+            <summary>
+            SortType (Ascending = 1,Descending = 2)
+            </summary>
+            <param name="requestSearchDeliveryManModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MilkStore.API.Controllers.OrderController.SearchOrder(MilkStore.API.Models.OrderModel.RequestSearchOrderModel)">
+            <summary>
+            Search orders based on filters including Month and Year.
+            </summary>
+            <param name="requestSearchOrderModel">Search parameters.</param>
+            <returns>List of orders matching the search criteria.</returns>
+        </member>
+        <member name="M:MilkStore.API.Controllers.OrderController.GetOrdersByDateRange(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Get orders within a specific date range.
+            </summary>
+            <param name="requestDateRangeModel">Date range parameters.</param>
+            <returns>List of orders within the specified date range.</returns>
+        </member>
+        <member name="M:MilkStore.API.Controllers.VNPayController.Payment(System.String,System.String)">
+            param amount: số tiền
+            param info: orderId được tạo trong bảng order
+        </member>
+    </members>
+</doc>
